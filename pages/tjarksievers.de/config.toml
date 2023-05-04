@@ -1,0 +1,49 @@
+baseURL = "https://tjarksievers.de/"
+title = "Tjark Sievers"
+theme = "ruberTeX"
+paginate = 10
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+ignoreFiles = ['README.md$']
+
+[author]
+  name = "Tjark Sievers"
+  abstract = "A collection of many different things that interest me"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "paraiso-dark"
+    
+[menu]
+[[menu.main]]
+  name = "Lecture Notes"
+  url = "/lecture-notes"
+  weight = -120
+[[menu.main]]
+  name = "CV"
+  url = "/cv"
+  weight = -110
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = -100
+
+[Params.social]
+  mastodon = "https://tech.lgbt/@tjark"
+
+[Params.cv]
+  url = "/cv/"
+  general = true
+  education = true
+  work_experience = true
+  publications = false

@@ -1,0 +1,20 @@
+en:
+  master:
+    name: M. Sc. Physics
+    institution: Universität Hamburg
+    location: Hamburg
+    date: 2022-10-01
+    current: true
+  bachelor:
+    name: B. Sc. Physics
+    institution: Universität Hamburg
+    location: Hamburg
+    date: 2022-07-01
+    appraisal: "1.47"
+    notes: "Thesis: \"Optimization of the Quantum Espresso Density Functional Theory Code for parallel execution on the PHYSnet-Cluster\""
+  abitur:
+    name: Abitur
+    institution: Werner-Heisenberg-Gymnasium
+    location: Heide
+    date: 2017-07-01
+    appraisal: "1.5"

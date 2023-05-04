@@ -1,0 +1,9 @@
+FROM klakegg/hugo:0.101.0-ubuntu-onbuild AS hugo
+
+COPY themes/ /src/
+COPY config.toml /src/
+COPY content/ /src/
+
+FROM nginx:latest
+
+COPY --from=hugo --chown=nginx /target /usr/share/nginx/html/

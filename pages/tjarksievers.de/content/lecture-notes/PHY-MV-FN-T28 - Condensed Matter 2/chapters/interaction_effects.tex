@@ -1,0 +1,20 @@
+\documentclass[../classnotes.tex]{subfiles}
+\graphicspath{{\subfix{../figs/}}}
+
+\begin{document}
+\chapter{Interaction effects in solids and electronic correlations}\label{ch:interaction-effects-in-solids-and-electronic-correlations}
+
+This section will deal with a
+
+\begin{equation}\label{eq:hubbard_hamiltonian}
+    H = \sum_{i \sigma} \epsilon_0 c_{i \sigma}^{\dagger} c_{i \sigma} - t \sum_{\langle i,j \rangle \sigma} c_{i \sigma}^{\dagger} c_{j \sigma} + U \sum_i n_{i \uparrow} n_{i \downarrow}
+\end{equation}
+with parameters \(\epsilon_0, t, U \in \R\).
+Explanation of the individual terms:
+\begin{itemize}
+    \item onsite energy \(\sum_{i \sigma} \epsilon_0 c_{i \sigma}^{\dagger} c_{i \sigma}\): the term \(c_{i \sigma}^{\dagger} c_{i \sigma}\) counts the number of particles lattice site \(i\) with spin \(\sigma\), attaches an energy \(\epsilon_0\) to each lattice site if the site (with spin \(\sigma\)) is occupied
+    \item hopping term \(t \sum_{\langle i,j \rangle \sigma} c_{i \sigma}^{\dagger} c_{j \sigma}\): pairs different lattice sites
+    \item double occupancy \(U \sum_i n_{i \uparrow} n_{i \downarrow}\): energy prize \(U\) when lattice site \(i\) has two electrons (one with spin up and one with spin down)
+\end{itemize}
+
+\end{document}
