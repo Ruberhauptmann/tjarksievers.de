@@ -3,6 +3,8 @@ version: '3'
 services:
   nginx-proxy:
     image: nginxproxy/nginx-proxy
+    networks:
+      - nginx-proxy
     container_name: nginx-proxy
     ports:
       - "80:80"
@@ -16,15 +18,19 @@ services:
 
   acme-companion:
     image: nginxproxy/acme-companion
+    networks:
+      - nginx-proxy
     container_name: nginx-proxy-acme
     environment:
       - DEFAULT_EMAIL=tjark.sievers@outlook.de
+      - NGINX_PROXY_CONTAINER=nginx-proxy
     volumes:
+      - conf:/etc/nginx/conf.d
+      - vhost:/etc/nginx/vhost.d
+      - html:/usr/share/nginx/html
       - certs:/etc/nginx/certs:rw
       - acme:/etc/acme.sh
       - /var/run/docker.sock:/var/run/docker.sock:ro
-    volumes_from:
-      - nginx-proxy
 
 volumes:
   conf:
@@ -32,3 +38,7 @@ volumes:
   html:
   certs:
   acme:
+
+networks:
+  nginx-proxy:
+    driver: bridge

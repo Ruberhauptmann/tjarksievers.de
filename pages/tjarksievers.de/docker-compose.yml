@@ -4,6 +4,8 @@ services:
   tjarksievers-de:
     image: $INDEX_IMAGE_TAG
     container_name: tjarksievers-de
+    networks:
+      - nginx-proxy
     environment:
       - VIRTUAL_HOST=tjarksievers.de
       - LETSENCRYPT_HOST=tjarksievers.de
