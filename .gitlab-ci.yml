@@ -8,13 +8,17 @@ variables:
   INDEX_IMAGE_TAG: $CI_REGISTRY_IMAGE/tjarksievers.de:latest
   #ART_IMAGE_TAG: $CI_REGISTRY_IMAGE/art.tjarksievers.de:latest
 
+services:
+  - docker:20-dind
+
 build-index:
-  image: docker:20-dind
+  image: docker:20
   stage: build
   before_script:
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
   script:
-    - docker build --pull -t $INDEX_IMAGE_TAG pages/tjarksievers.de/
+    - docker pull $INDEX_IMAGE_TAG:latest || true
+    - docker build --cache-from $INDEX_IMAGE_TAG:latest --pull -t $INDEX_IMAGE_TAG pages/tjarksievers.de/
     - docker push $INDEX_IMAGE_TAG
   tags:
     - docker
@@ -28,9 +32,10 @@ test-index:
     - docker
 
 deploy:
-  image: docker:20-dind
+  image: docker:20
   stage: deploy
   before_script:
+    - unset DOCKER_HOST
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - docker context import production production.dockercontext
     - eval $(ssh-agent -s)
@@ -42,7 +47,7 @@ deploy:
     - > 
       docker --context=production compose 
       -f docker-compose.yml
-      -f deploy/tjarksievers.de/docker-compose.yml
+      -f pages/tjarksievers.de/docker-compose.yml
       up -d --build
   tags:
     - docker
