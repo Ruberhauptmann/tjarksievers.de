@@ -6,4 +6,7 @@ COPY content/ /src/
 
 FROM nginx:latest
 
+COPY nginx-config/default.conf /etc/nginx/conf.d/
+COPY nginx-config/lecture-notes.htpasswd /etc/nginx/conf.d/
 COPY --from=hugo --chown=nginx /target /usr/share/nginx/html/
+

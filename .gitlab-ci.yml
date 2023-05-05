@@ -1,6 +1,6 @@
 stages:
   - build
-  - test
+  #- test
   - deploy
 
 variables:
@@ -23,13 +23,13 @@ build-index:
   tags:
     - docker
 
-test-index:
-  image: $INDEX_IMAGE_TAG
-  stage: test
-  script:
-    - echo "test not yet implemented"
-  tags:
-    - docker
+#test-index:
+#  image: $INDEX_IMAGE_TAG
+#  stage: test
+#  script:
+#    - echo "test not yet implemented"
+#  tags:
+#    - docker
 
 deploy:
   image: docker:20
@@ -45,9 +45,19 @@ deploy:
     - cat host_key.txt >> ~/.ssh/known_hosts
   script:
     - > 
+      docker --context=production compose
+      -f docker-compose.yml
+      -f pages/tjarksievers.de/docker-compose.yml
+      down
+    - >
+      docker --context=production compose
+      -f docker-compose.yml
+      -f pages/tjarksievers.de/docker-compose.yml
+      pull
+    - > 
       docker --context=production compose 
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
-      up -d --build
+      up -d
   tags:
     - docker
