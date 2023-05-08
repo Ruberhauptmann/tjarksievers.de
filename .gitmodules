@@ -1,3 +1,6 @@
 [submodule "pages/tjarksievers.de/themes/ruberTeX"]
 	path = pages/tjarksievers.de/themes/ruberTeX
 	url = https://gitlab.com/Ruberhauptmann/ruberTeX.git
+[submodule "pages/tjarksievers.de/data"]
+	path = pages/tjarksievers.de/data
+	url = https://gitlab.com/Ruberhauptmann/cv-data.git
