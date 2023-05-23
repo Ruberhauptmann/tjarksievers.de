@@ -26,6 +26,10 @@ ignoreFiles = ['README.md$']
     
 [menu]
 [[menu.main]]
+  name = "Projects"
+  url = "/projects"
+  weight = -130
+[[menu.main]]
   name = "Lecture Notes"
   url = "/lecture-notes"
   weight = -120
