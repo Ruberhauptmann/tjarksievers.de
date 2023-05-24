@@ -2,6 +2,7 @@
 title = "nolopot"
 date = 2023-05-23
 link = "https://git.physnet.uni-hamburg.de/tsievers/nolopot"
+icon = "gitlab"
 author = "Tjark Sievers"
 categories = ["Python"]
 +++
