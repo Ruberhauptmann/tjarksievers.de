@@ -61,3 +61,7 @@ deploy:
       up -d
   tags:
     - docker
+  only:
+    - main
+  only:
+    - main
