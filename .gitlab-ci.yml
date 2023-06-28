@@ -48,7 +48,6 @@ deploy:
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
       -f pages/plan.tjarksievers.de/docker-compose.yml
-      -f pages/plan.tjarksievers.de/docker-compose.control.yml
       -f pages/plan.tjarksievers.de/docker-compose.override.yml
       down
     - >
@@ -56,7 +55,6 @@ deploy:
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
       -f pages/plan.tjarksievers.de/docker-compose.yml
-      -f pages/plan.tjarksievers.de/docker-compose.control.yml
       -f pages/plan.tjarksievers.de/docker-compose.override.yml
       pull
     - > 
@@ -64,7 +62,6 @@ deploy:
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
       -f pages/plan.tjarksievers.de/docker-compose.yml
-      -f pages/plan.tjarksievers.de/docker-compose.control.yml
       -f pages/plan.tjarksievers.de/docker-compose.override.yml
       up -d
   tags:
