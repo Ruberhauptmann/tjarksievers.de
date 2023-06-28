@@ -15,7 +15,7 @@ services:
       PGDATA: /var/lib/postgresql/data
     volumes:
       - "${PGDATA:-pgdata}:/var/lib/postgresql/data"
-      - "./control:/control"
+      #- "./control:/control"
     entrypoint: ["/control/upgrade/entrypoint.sh"]
   backup:
     restart: "no"
@@ -27,8 +27,8 @@ services:
     volumes:
       - "${PGDATA:-pgdata}:/var/lib/postgresql/data"
       - "${OPDATA:-opdata}:/var/openproject/assets"
-      - "./backups:/backups"
-      - "./control:/control"
+      - "backups:/backups"
+      #- "./control:/control"
     entrypoint: ["/control/backup/entrypoint.sh"]
   web:
     restart: "no"
@@ -48,4 +48,7 @@ services:
   cache:
     restart: "no"
     entrypoint: ["echo", "disabled"]
+
+  volumes:
+    backups:
 
