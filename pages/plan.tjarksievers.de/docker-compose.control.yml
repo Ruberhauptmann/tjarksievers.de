@@ -2,6 +2,7 @@ version: "3.7"
 
 volumes:
   pgupgrade:
+  backups:
 
 services:
   db:
@@ -48,7 +49,3 @@ services:
   cache:
     restart: "no"
     entrypoint: ["echo", "disabled"]
-
-  volumes:
-    backups:
-
