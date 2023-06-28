@@ -10,7 +10,7 @@ services:
   upgrade:
     restart: "no"
     build:
-      context: ./control
+      context: pages/plan.tjarksievers.de/control
     environment:
       PGDATA: /var/lib/postgresql/data
     volumes:
@@ -20,7 +20,7 @@ services:
   backup:
     restart: "no"
     build:
-      context: ./control
+      context: pages/plan.tjarksievers.de/control
     environment:
       PGDATA: /var/lib/postgresql/data
       OPDATA: /var/openproject/assets
