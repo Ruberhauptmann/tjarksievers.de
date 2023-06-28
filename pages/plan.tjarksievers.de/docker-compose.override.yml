@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  proxy:
+    environment:
+      - VIRTUAL_HOST=plan.tjarksievers.de
+      - LETSENCRYPT_HOST=plan.tjarksievers.de
+      - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
+    depends_on:
+      - nginx-proxy
+    networks:
+      - nginx-proxy

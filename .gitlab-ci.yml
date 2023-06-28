@@ -6,7 +6,6 @@ stages:
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
   INDEX_IMAGE_TAG: $CI_REGISTRY_IMAGE/tjarksievers.de:latest
-  #ART_IMAGE_TAG: $CI_REGISTRY_IMAGE/art.tjarksievers.de:latest
 
 services:
   - docker:20-dind
@@ -48,20 +47,27 @@ deploy:
       docker --context=production compose
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
+      -f pages/plan.tjarksievers.de/docker-compose.yml
+      -f pages/plan.tjarksievers.de/docker-compose.control.yml
+      -f pages/plan.tjarksievers.de/docker-compose.override.yml
       down
     - >
       docker --context=production compose
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
+      -f pages/plan.tjarksievers.de/docker-compose.yml
+      -f pages/plan.tjarksievers.de/docker-compose.control.yml
+      -f pages/plan.tjarksievers.de/docker-compose.override.yml
       pull
     - > 
       docker --context=production compose 
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
+      -f pages/plan.tjarksievers.de/docker-compose.yml
+      -f pages/plan.tjarksievers.de/docker-compose.control.yml
+      -f pages/plan.tjarksievers.de/docker-compose.override.yml
       up -d
   tags:
     - docker
-  only:
-    - main
   only:
     - main
