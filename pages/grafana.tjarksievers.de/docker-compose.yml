@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  grafana:
+    image: grafana/grafana-enterprise
+    container_name: grafana
+    networks:
+      - nginx-proxy
+    environment:
+      - VIRTUAL_HOST=grafana.tjarksievers.de
+      - LETSENCRYPT_HOST=grafana.tjarksievers.de
+      - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
+    depends_on:
+      - nginx-proxy
+    volumes:
+      - grafana_data:/var/lib/grafana
+volumes:
+  grafana_data: {}
