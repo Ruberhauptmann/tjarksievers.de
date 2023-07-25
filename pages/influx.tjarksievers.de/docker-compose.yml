@@ -10,7 +10,6 @@ services:
       - VIRTUAL_HOST=influx.tjarksievers.de
       - LETSENCRYPT_HOST=influx.tjarksievers.de
       - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
-      -
     ports:
       - "8086:8086"
     depends_on:
