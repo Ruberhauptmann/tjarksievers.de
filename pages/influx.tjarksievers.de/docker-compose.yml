@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  grafana:
+    image: influxdb:2.7.0
+    container_name: influxdb
+    networks:
+      - nginx-proxy
+    environment:
+      - VIRTUAL_HOST=influx.tjarksievers.de
+      - LETSENCRYPT_HOST=influx.tjarksievers.de
+      - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
+    depends_on:
+      - nginx-proxy
+    volumes:
+      - influxdb_data:/var/lib/influxdb2
+volumes:
+  influxdb_data: {}
