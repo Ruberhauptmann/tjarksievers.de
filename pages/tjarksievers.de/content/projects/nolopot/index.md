@@ -4,7 +4,8 @@ date = 2023-05-23
 link = "https://git.physnet.uni-hamburg.de/tsievers/nolopot"
 icon = "gitlab"
 author = "Tjark Sievers"
-categories = ["Python"]
+categories = ["Project Showcases"]
+tags = ["Python", "Computational Physics"]
 +++
 
 Python package to calculate bound states and (someday) scattering for non-local potentials.

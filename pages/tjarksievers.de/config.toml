@@ -1,7 +1,7 @@
 baseURL = "https://tjarksievers.de/"
 title = "Tjark Sievers"
 theme = "ruberTeX"
-paginate = 10
+paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -28,20 +28,27 @@ summaryLength = 20
 [menu]
 [[menu.main]]
   name = "Projects"
-  url = "/projects"
+  url = "/categories/project-showcases"
   weight = -130
+[[menu.main]]
+  name = "Blog"
+  url = "/blog"
+  weight = -120
 [[menu.main]]
   name = "Lecture Notes"
   url = "/lecture-notes"
-  weight = -120
+  weight = -110
 [[menu.main]]
   name = "CV"
   url = "/cv"
-  weight = -110
+  weight = -100
 [[menu.main]]
   name = "About"
   url = "/about"
-  weight = -100
+  weight = 0
+
+[Params]
+  mainSections = ["blog", "projects"]
 
 [Params.social]
   mastodon = "https://tech.lgbt/@tjark"
