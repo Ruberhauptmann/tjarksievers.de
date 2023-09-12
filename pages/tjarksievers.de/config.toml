@@ -18,6 +18,9 @@ summaryLength = 20
   tag = "tags"
   series = "series"
 
+[frontmatter]
+  date = ['date_finished', ':default']
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
