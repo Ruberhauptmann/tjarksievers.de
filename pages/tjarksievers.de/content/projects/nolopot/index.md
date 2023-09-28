@@ -1,7 +1,7 @@
 +++
 title = "nolopot"
 date = 2023-05-23
-link = "https://git.physnet.uni-hamburg.de/tsievers/nolopot"
+link = "https://gitlab.com/Ruberhauptmann/nolopot"
 icon = "gitlab"
 author = "Tjark Sievers"
 categories = ["Project Showcases"]
