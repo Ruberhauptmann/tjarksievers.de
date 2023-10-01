@@ -1,6 +1,47 @@
+# Deployment for my webpages
+
+This repository controls the deployment for all the websites I host.
+
+[![pipeline status](https://gitlab.com/Ruberhauptmann/tjarksievers.de/badges/main/pipeline.svg)](https://gitlab.com/Ruberhauptmann/tjarksievers.de/-/commits/main)
+
+## Overview
+
+Deployment is done via Gitlab CI, using Docker containers to separate the different services running on the server.
+All the pages can be found under `pages` in respective directories.
+Each page has its own `docker-compose.yml` file, these are added in the `.gitlab-ci.yml` to be deployed.
+All pages get deployed on every commit to main.
+
+Current pages under the domain:
+- Landing page with my CV, project showcases and a blog at [tjarksievers.de](https://tjarksievers.de)
+- A Grafana installation at [grafana.tjarksievers.de](https://grafana.tjarksievers.de)
+- An InfluxDB installation at [influx.tjarksievers.de](https://influx.tjarksievers.de)
+
+## Setup server for deployment
+
+* Add 2 users: `tjark`, `deploy`
+* Add public key from this repo (`deploy_key.pub`) as authorised key for the `deploy` user
+* Get host key from the server and save it in this repo as `host_key.txt`
+* Disable root ssh login (and lock down further as much as wanted)
 
 ## How to add new subpages
 
-pub key for deploy:
+Create a new directory under `pages`, named like the subdomain it should run under.
 
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCtYszha7Je0R4QfvmQEEb5GmveKlQhLXHcXWebfpkqqtRPTi1OVMse1XgCADwa9Vi2/laLXr3XLhchvl++g/FAz6eqk6AIYlTIPFLn2+g/HKqz/om1Cuj0BgSofzlz4NY+8YzXegj/iVc/OeR7F2DFUNFZo/+0ayN4YwtYzhewdbRrZWakVmNv6oI22gMQxC8AfikmHzBZCej++sauNwXTwz0kGg7I0+mS2pK5nu/HvvX1pDo5U9L8RmZ8+CAC+NtIWtB4q+mKtB5Nkw6vJpAPoS0xv/FCBikpkIfQBTZmnZby4dLebtXCXDPGnKIhYS558MbIlTdWgMKMeqSvNccEleOQ8Fvu9kBUbXCLYouFuGGwSVFkyBTz+Bp0VeOdDtF6HeCsQYCxuY9OwGrT3s24IiaoZITJEMJVafgmeKNuEU0a45T5DjmwVB6U2Y5wqiCq8emtT/yjs8kfG/ZwaWsmAPJ6cRTDR1svp2IuMw+caA6QiWH4vVSUjoxuoP/Wxx0F+VUcZTlSspZTbGhaXLNGjE+qW1z4K3grDQa1LSuU4lL+5YS9auSLxAZBKbtLsiFRIG4GnyrSCRRPj8y0CDjy5/gI/y3hNESMobbm7rFWh6u4HPHyhJK22KhxPZGlLN26HpRkqPCdqd3KR0T+64yOG/fWalLO/iz3PtJAvRNBuQ== deploy key tjarksievers.de
+All that is needed is a `docker-compose.yml` file, this needs to include at least the following to be reachable from outside:
+```
+version: '3'
+
+services:
+  <service_name>:
+    container_name: <container_name>
+    networks:
+      - nginx-proxy
+    environment:
+      - VIRTUAL_HOST=tjarksievers.de
+      - LETSENCRYPT_HOST=tjarksievers.de
+      - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
+    depends_on:
+      - nginx-proxy
+```
+
+In the `.gitlab-ci.yml` file, under `deploy` add the file under all the under `docker-compose.yml` file (in all the locations!).
