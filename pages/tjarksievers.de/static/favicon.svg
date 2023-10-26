@@ -25,11 +25,11 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="13.723823"
-     inkscape:cx="-6.6308054"
+     inkscape:cx="5.2463515"
      inkscape:cy="20.18388"
      inkscape:window-width="2051"
      inkscape:window-height="1330"
-     inkscape:window-x="236"
+     inkscape:window-x="243"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
      inkscape:current-layer="text6309"
@@ -64,14 +64,17 @@
        id="text6309"
        style="font-size:7.76111px;line-height:1.25;stroke-width:0.264583"
        transform="translate(-0.36630342,0.31709627)">
-      <path
-         d="M 5.486909,2.3672789 H 3.838431 V 7.2103933 H 3.2207255 V 2.3672789 H 1.5646684 V 1.8632615 H 5.486909 Z"
-         style="font-family:monospace;-inkscape-font-specification:monospace"
-         id="path1920" />
-      <path
-         d="m 7.4222331,2.4544398 q -0.4774902,-0.162953 -0.9057155,-0.162953 -0.4850693,0 -0.7920273,0.2235867 -0.3031684,0.219797 -0.3031684,0.6290743 0,0.4850694 0.7996066,0.852661 0.5911783,0.2728515 0.7806585,0.3789604 0.1932698,0.106109 0.3903292,0.2917996 0.1970595,0.1856906 0.3145372,0.4395941 0.1212673,0.2501139 0.1212673,0.5646511 0,0.7806585 -0.526755,1.2126734 -0.5229654,0.4282253 -1.235411,0.4282253 -0.689708,0 -1.2088838,-0.2728516 L 4.9855174,6.5055269 q 0.6101263,0.2766411 1.0648789,0.2766411 0.5305446,0 0.8488714,-0.2728515 Q 7.221384,6.2326754 7.221384,5.7513956 7.221384,5.3951728 7.0129558,5.1488485 6.8045276,4.8987347 6.2436661,4.6410416 5.6676462,4.3757692 5.497114,4.2810291 5.3303714,4.1824994 5.1636288,4.0119672 4.9968863,3.841435 4.9059357,3.6292172 q -0.09095,-0.2122179 -0.09095,-0.4623318 0,-0.6631807 0.4774902,-1.034562 0.4774901,-0.3713812 1.2088838,-0.3713812 0.5343342,0 1.0610892,0.162953 z"
-         style="font-family:monospace;-inkscape-font-specification:monospace"
-         id="path1922" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.35px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0700042"
+         x="0.96395612"
+         y="5.8329458"
+         id="text787"><tspan
+           id="tspan785"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Courier;-inkscape-font-specification:Courier;stroke-width:0.0700042"
+           x="0.96395612"
+           y="5.8329458"
+           sodipodi:role="line">TS</tspan></text>
     </g>
   </g>
 </svg>
