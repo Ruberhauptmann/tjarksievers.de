@@ -49,6 +49,7 @@ deploy:
       -f pages/tjarksievers.de/docker-compose.yml
       -f pages/grafana.tjarksievers.de/docker-compose.yml
       -f pages/influx.tjarksievers.de/docker-compose.yml
+      -f pages/budget.tjarksievers.de/docker-compose.yml
       down
     - >
       docker --context=production compose
@@ -56,13 +57,14 @@ deploy:
       -f pages/tjarksievers.de/docker-compose.yml
       -f pages/grafana.tjarksievers.de/docker-compose.yml
       -f pages/influx.tjarksievers.de/docker-compose.yml
+      -f pages/budget.tjarksievers.de/docker-compose.yml
       pull
     - > 
       docker --context=production compose 
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
       -f pages/grafana.tjarksievers.de/docker-compose.yml
-      -f pages/influx.tjarksievers.de/docker-compose.yml
+      -f pages/budget.tjarksievers.de/docker-compose.yml
       up -d
   tags:
     - docker
