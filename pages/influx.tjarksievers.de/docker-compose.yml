@@ -32,5 +32,5 @@ volumes:
   influxdb_data: {}
   influxdb_config: {}
 networks:
-  nginx-proxy:
+  influxdb:
     driver: bridge
