@@ -19,7 +19,7 @@ services:
       - influxdb_data:/var/lib/influxdb/data
       - influxdb_config:/etc/influxdb
   telegraf:
-    build: ./
+    build: ./pages/influx.tjarksievers.de/
     container_name: telegraf
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
