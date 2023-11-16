@@ -15,6 +15,8 @@ services:
     depends_on:
       - nginx-proxy
     volumes:
-      - influxdb_data:/var/lib/influxdb2
+      - influxdb_data:/var/lib/influxdb/data
+      - influxdb_config:/etc/influxdb/influxdb.conf
 volumes:
   influxdb_data: {}
+  influxdb_config: {}
