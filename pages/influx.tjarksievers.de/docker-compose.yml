@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   influx:
-    image: influxdb:2.7.4
+    image: influxdb:1.8.10
     container_name: influxdb
     networks:
       - nginx-proxy
