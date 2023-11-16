@@ -6,6 +6,7 @@ services:
     container_name: influxdb
     networks:
       - nginx-proxy
+      - influxdb
     environment:
       - VIRTUAL_HOST=influx.tjarksievers.de
       - LETSENCRYPT_HOST=influx.tjarksievers.de
@@ -17,6 +18,19 @@ services:
     volumes:
       - influxdb_data:/var/lib/influxdb/data
       - influxdb_config:/etc/influxdb
+  telegraf:
+    build: ./
+    container_name: telegraf
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - TELEGRAF_PASSWORD=${TELEGRAF_PASSWORD}
+    networks:
+      - influxdb
+
 volumes:
   influxdb_data: {}
   influxdb_config: {}
+networks:
+  nginx-proxy:
+    driver: bridge
