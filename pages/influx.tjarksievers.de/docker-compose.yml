@@ -16,7 +16,7 @@ services:
       - nginx-proxy
     volumes:
       - influxdb_data:/var/lib/influxdb/data
-      - influxdb_config:/etc/influxdb/influxdb.conf
+      - influxdb_config:/etc/influxdb
 volumes:
   influxdb_data: {}
   influxdb_config: {}
