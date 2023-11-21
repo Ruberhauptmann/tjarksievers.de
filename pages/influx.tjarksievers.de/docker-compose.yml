@@ -9,10 +9,9 @@ services:
       - influxdb
     environment:
       - VIRTUAL_HOST=influx.tjarksievers.de
+      - VIRTUAL_PORT=8086
       - LETSENCRYPT_HOST=influx.tjarksievers.de
       - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
-    ports:
-      - "8086:8086"
     depends_on:
       - nginx-proxy
     volumes:
