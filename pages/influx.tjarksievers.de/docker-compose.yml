@@ -29,8 +29,8 @@ services:
       - influxdb
 
 volumes:
-  influxdb_data: {}
-  influxdb_config: {}
+  influxdb_data:
+  influxdb_config:
 networks:
   influxdb:
     driver: bridge

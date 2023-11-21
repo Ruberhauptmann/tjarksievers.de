@@ -50,7 +50,7 @@ deploy:
       -f pages/grafana.tjarksievers.de/docker-compose.yml
       -f pages/influx.tjarksievers.de/docker-compose.yml
       -f pages/budget.tjarksievers.de/docker-compose.yml
-      down
+      stop
     - >
       docker --context=production compose
       -f docker-compose.yml
