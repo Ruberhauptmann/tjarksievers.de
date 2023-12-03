@@ -11,7 +11,7 @@ services:
       - LETSENCRYPT_HOST=saboga.tjarksievers.de
       - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
     env_file:
-      - .env
+      - pages/saboga.tjarksievers.de/.env
     networks:
       - saboga-api
 
@@ -24,7 +24,7 @@ services:
       - LETSENCRYPT_HOST=saboga.db.tjarksievers.de
       - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
     env_file:
-      - .env
+      - pages/saboga.tjarksievers.de/.env
     networks:
       - saboga-api
 
