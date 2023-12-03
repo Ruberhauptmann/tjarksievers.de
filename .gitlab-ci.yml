@@ -50,7 +50,7 @@ deploy:
       -f pages/grafana.tjarksievers.de/docker-compose.yml
       -f pages/influx.tjarksievers.de/docker-compose.yml
       -f pages/budget.tjarksievers.de/docker-compose.yml
-      -f pages/sagoba.tjarksievers.de/docker-compose.yml
+      -f pages/saboga.tjarksievers.de/docker-compose.yml
       stop
     - >
       docker --context=production compose
@@ -59,7 +59,7 @@ deploy:
       -f pages/grafana.tjarksievers.de/docker-compose.yml
       -f pages/influx.tjarksievers.de/docker-compose.yml
       -f pages/budget.tjarksievers.de/docker-compose.yml
-      -f pages/sagoba.tjarksievers.de/docker-compose.yml
+      -f pages/saboga.tjarksievers.de/docker-compose.yml
       pull
     - > 
       docker --context=production compose
@@ -68,7 +68,7 @@ deploy:
       -f pages/grafana.tjarksievers.de/docker-compose.yml
       -f pages/influx.tjarksievers.de/docker-compose.yml
       -f pages/budget.tjarksievers.de/docker-compose.yml
-      -f pages/sagoba.tjarksievers.de/docker-compose.yml
+      -f pages/saboga.tjarksievers.de/docker-compose.yml
       up -d --build
   tags:
     - docker
