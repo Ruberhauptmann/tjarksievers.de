@@ -2,8 +2,7 @@ version: '3.8'
 
 services:
   api:
-    build: ./pages/saboga.tjarksievers.de/
-    image: saboga-api:latest
+    image: registry.gitlab.com/ruberhauptmann/sabogaapi/sabogaapi:latest
     container_name: saboga-api
     depends_on:
       - nginx-proxy
