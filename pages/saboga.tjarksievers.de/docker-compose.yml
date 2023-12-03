@@ -20,11 +20,15 @@ services:
   database:
     image: mariadb:latest
     container_name: saboga-database
+    volumes:
+      - mariadb-data:/var/lib/mysql
     env_file:
       - pages/saboga.tjarksievers.de/.env
     networks:
       - saboga-api
 
+volumes:
+  mariadb-data:
 networks:
   saboga-api:
     name: saboga-api
