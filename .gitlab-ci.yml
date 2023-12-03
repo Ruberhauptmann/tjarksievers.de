@@ -69,7 +69,7 @@ deploy:
       -f pages/budget.tjarksievers.de/docker-compose.yml
       -f pages/saboga.tjarksievers.de/docker-compose.yml
       up -d --build
-    - docker exec saboga-api alembic upgrade head
+    - docker --context=production exec saboga-api alembic upgrade head
   tags:
     - docker
   only:
