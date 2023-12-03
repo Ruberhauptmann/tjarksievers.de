@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./
+    image: saboga-api:latest
+    container_name: saboga-api
+    environment:
+      - VIRTUAL_HOST=saboga.tjarksievers.de
+      - VIRTUAL_PORT=8000
+      - LETSENCRYPT_HOST=saboga.tjarksievers.de
+      - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
+    env_file:
+      - .env
+    networks:
+      - saboga-api
+
+  database:
+    image: mariadb:latest
+    container_name: saboga-database
+    environment:
+      - VIRTUAL_HOST=saboga.db.tjarksievers.de
+      - VIRTUAL_PORT=3306
+      - LETSENCRYPT_HOST=saboga.db.tjarksievers.de
+      - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
+    env_file:
+      - .env
+    networks:
+      - saboga-api
+
+networks:
+  saboga-api:
+    name: saboga-api
+    driver: bridge
