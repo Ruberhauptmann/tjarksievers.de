@@ -5,6 +5,8 @@ services:
     build: ./pages/saboga.tjarksievers.de/
     image: saboga-api:latest
     container_name: saboga-api
+    depends_on:
+      - nginx-proxy
     environment:
       - VIRTUAL_HOST=saboga.tjarksievers.de
       - VIRTUAL_PORT=8000
@@ -14,15 +16,11 @@ services:
       - pages/saboga.tjarksievers.de/.env
     networks:
       - saboga-api
+      - nginx-proxy
 
   database:
     image: mariadb:latest
     container_name: saboga-database
-    environment:
-      - VIRTUAL_HOST=saboga.db.tjarksievers.de
-      - VIRTUAL_PORT=3306
-      - LETSENCRYPT_HOST=saboga.db.tjarksievers.de
-      - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
     env_file:
       - pages/saboga.tjarksievers.de/.env
     networks:
