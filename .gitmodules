@@ -7,3 +7,6 @@
 [submodule "pages/tjarksievers.de/content/lecture-notes"]
 	path = pages/tjarksievers.de/content/lecture-notes
 	url = ../lecture-notes.git
+[submodule "pages/tjarksievers.de/themes/sunflower"]
+	path = pages/tjarksievers.de/themes/sunflower
+	url = https://gitlab.com/Ruberhauptmann/sunflower.git

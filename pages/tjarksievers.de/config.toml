@@ -1,6 +1,6 @@
 baseURL = "https://tjarksievers.de/"
 title = "Tjark Sievers"
-theme = "ruberTeX"
+theme = "sunflower"
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
