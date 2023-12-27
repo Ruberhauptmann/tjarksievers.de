@@ -10,6 +10,8 @@ WORKDIR /src
 COPY themes/ /src/themes/
 COPY config.toml /src/
 COPY content/ /src/content/
+COPY data/ /src/data/
+COPY static/ /src/static/
 
 RUN npm install ./themes/sunflower
 
