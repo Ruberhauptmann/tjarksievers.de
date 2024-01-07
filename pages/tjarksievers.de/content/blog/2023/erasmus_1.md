@@ -1,10 +1,10 @@
 +++
-title = "Finding a project and applying for Erasmus funding"
+title = "Finding a Project and Applying for Erasmus Funding"
 date = 2023-10-08
 author = "Tjark Sievers"
 categories = ["Blog"]
 tags = ["Erasmus"]
-series = "My master's thesis in Sweden"
+series = "Master Thesis in Sweden"
 summary = "Next year, I will spend 4 months in Sweden for the research phase of my master's thesis. This post goes over some organisational details, the process of getting support at my home university in Hamburg, getting the funding for it via Eramus and finding a research group and project."
 +++
 

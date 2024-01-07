@@ -1,10 +1,10 @@
 +++
-title = "Hopes and expectations"
+title = "Hopes and Expectations"
 date = 2023-11-14
 author = "Tjark Sievers"
 categories = ["Blog"]
 tags = ["Erasmus"]
-series = "My master's thesis in Sweden"
+series = "Master Thesis in Sweden"
 summary = ""
 +++
 
