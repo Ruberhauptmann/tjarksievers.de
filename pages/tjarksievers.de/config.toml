@@ -9,9 +9,8 @@ footnoteReturnLinkContents = "^"
 ignoreFiles = ['README.md$']
 summaryLength = 20
 
-[author]
-  name = "Tjark Sievers"
-  abstract = "A collection of many different things that interest me"
+copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
+author = "Tjark Sievers"
 
 [taxonomies]
   category = "categories"
@@ -52,6 +51,8 @@ summaryLength = 20
 
 [Params]
   mainSections = ["blog", "projects"]
+  favicon = "favicon.svg"
+  abstract = "A collection of many different things that interest me."
 
 [Params.social]
   mastodon = "https://tech.lgbt/@tjark"
