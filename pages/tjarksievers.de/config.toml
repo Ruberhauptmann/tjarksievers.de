@@ -4,18 +4,15 @@ theme = "sunflower"
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
-enableInlineShortcodes = true
-footnoteReturnLinkContents = "^"
 ignoreFiles = ['README.md$']
-summaryLength = 20
 
 copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 author = "Tjark Sievers"
 
 [params]
+  mainSections = ["projects", "blog", "lecture-notes"]
   favicon = "favicon.svg"
   hero = "sunset.jpg"
-  mainSections = ["projects", "blog", "lecture-notes"]
   abstract = "Hi, I'm Tjark. I study physics and do stuff with computers."
 
 [taxonomies]
@@ -26,13 +23,6 @@ author = "Tjark Sievers"
 [frontmatter]
   date = ['date_finished', ':default']
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-  [markup.highlight]
-    style = "paraiso-dark"
-    
 [menu]
 [[menu.main]]
   name = "Projects"
@@ -54,11 +44,6 @@ author = "Tjark Sievers"
   name = "About"
   url = "/about"
   weight = 0
-
-[Params]
-  mainSections = ["blog", "projects"]
-  favicon = "favicon.svg"
-  abstract = "A collection of many different things that interest me."
 
 [Params.social]
   mastodon = "https://tech.lgbt/@tjark"
