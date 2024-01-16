@@ -9,7 +9,7 @@ ignoreFiles = ['README.md$']
 copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 author = "Tjark Sievers"
 
-[params]
+[Params]
   mainSections = ["projects", "blog", "lecture-notes"]
   favicon = "favicon.svg"
   hero = "sunset.jpg"
