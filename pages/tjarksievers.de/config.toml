@@ -12,6 +12,12 @@ summaryLength = 20
 copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 author = "Tjark Sievers"
 
+[params]
+  favicon = "favicon.svg"
+  hero = "sunset.jpg"
+  mainSections = ["projects", "blog", "lecture-notes"]
+  abstract = "Hi, I'm Tjark. I study physics and do stuff with computers."
+
 [taxonomies]
   category = "categories"
   tag = "tags"
