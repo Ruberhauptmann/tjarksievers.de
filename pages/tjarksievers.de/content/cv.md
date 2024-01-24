@@ -1,5 +1,5 @@
 +++
-title = "Curriculum Vitae"
+title = "Tjark Sievers"
 description = ""
 author = ""
 type = "cv"
