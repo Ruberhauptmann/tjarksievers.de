@@ -7,13 +7,12 @@ services:
     depends_on:
       - nginx-proxy
     environment:
-      - VIRTUAL_HOST=saboga.tjarksievers.de
-      - VIRTUAL_PATH=/api
+      - VIRTUAL_HOST=api.saboga.tjarksievers.de
       - VIRTUAL_PORT=8000
-      - LETSENCRYPT_HOST=saboga.tjarksievers.de
+      - LETSENCRYPT_HOST=api.saboga.tjarksievers.de
       - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
     env_file:
-      - pages/saboga.tjarksievers.de-api/.env
+      - pages/api.saboga.tjarksievers.de/.env
     networks:
       - saboga-api
       - nginx-proxy

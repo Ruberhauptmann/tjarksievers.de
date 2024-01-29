@@ -8,7 +8,6 @@ services:
       - nginx-proxy
     environment:
       - VIRTUAL_HOST=saboga.tjarksievers.de
-      - VIRTUAL_PATH=/
       - VIRTUAL_PORT=3000
       - LETSENCRYPT_HOST=saboga.tjarksievers.de
       - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
