@@ -24,7 +24,7 @@ services:
     volumes:
       - mariadb-data:/var/lib/mysql
     env_file:
-      - pages/api.saboga.tjarksievers.de/.env
+      - pages/saboga.tjarksievers.de-api/.env
     networks:
       - saboga-api
 
