@@ -10,7 +10,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 author = "Tjark Sievers"
 
 [Params]
-  mainSections = ["projects", "blog", "lecture-notes"]
+  mainSections = ["projects", "blog"]
   favicon = "favicon.svg"
   hero = "sunset.jpg"
   abstract = "Hi, I'm Tjark. I study physics and do stuff with computers."
