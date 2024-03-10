@@ -6,6 +6,8 @@ services:
     container_name: saboga-api
     depends_on:
       - nginx-proxy
+    expose:
+      - "8000"
     environment:
       - VIRTUAL_HOST=api.saboga.tjarksievers.de
       - VIRTUAL_PORT=8000
