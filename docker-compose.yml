@@ -6,8 +6,9 @@ services:
     container_name: reverse-proxy
     command:
       - "--api.dashboard=true"
+      - "--log.level=DEBUG"
     labels:
-      - "traefik.http.routers.dashboard.rule=Host(`traefik.tjarksievers.de`) && (PathPrefix(`/api`) || PathPrefix(`/dashboard`))"
+      - "traefik.http.routers.dashboard.rule=Host(`traefik.tjarksievers.de`)"
       - "traefik.http.routers.dashboard.service=api@internal"
       - "traefik.http.routers.dashboard.middlewares=auth"
       - "traefik.http.middlewares.auth.basicauth.users=tjark:$$2y$$05$$jPwGv8D/GmohOqXvHAT43On2jdW3ToA1QD45jIjj4wB/RTJD2ZWHe"
