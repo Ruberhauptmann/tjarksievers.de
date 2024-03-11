@@ -47,8 +47,6 @@ deploy:
       docker --context=production compose
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
-      -f pages/grafana.tjarksievers.de/docker-compose.yml
-      -f pages/influx.tjarksievers.de/docker-compose.yml
       -f pages/budget.tjarksievers.de/docker-compose.yml
       -f pages/api.saboga.tjarksievers.de/docker-compose.yml
       -f pages/saboga.tjarksievers.de/docker-compose.yml
@@ -57,8 +55,6 @@ deploy:
       docker --context=production compose
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
-      -f pages/grafana.tjarksievers.de/docker-compose.yml
-      -f pages/influx.tjarksievers.de/docker-compose.yml
       -f pages/budget.tjarksievers.de/docker-compose.yml
       -f pages/saboga.tjarksievers.de/docker-compose.yml
       pull
@@ -66,8 +62,6 @@ deploy:
       docker --context=production compose
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
-      -f pages/grafana.tjarksievers.de/docker-compose.yml
-      -f pages/influx.tjarksievers.de/docker-compose.yml
       -f pages/budget.tjarksievers.de/docker-compose.yml
       -f pages/api.saboga.tjarksievers.de/docker-compose.yml
       -f pages/saboga.tjarksievers.de/docker-compose.yml
