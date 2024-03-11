@@ -5,7 +5,7 @@ services:
     image: registry.gitlab.com/ruberhauptmann/saboga-frontend/saboga-frontend:latest
     container_name: saboga-frontend
     labels:
-      - "traefik.http.routers.frontend.rule=Host('saboga.tjarksievers.de')"
+      - "traefik.http.routers.frontend.rule=Host(`saboga.tjarksievers.de`)"
     depends_on:
       - reverse-proxy
     networks:

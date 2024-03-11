@@ -5,7 +5,7 @@ services:
     image: $INDEX_IMAGE_TAG
     container_name: tjarksievers-de
     labels:
-      - "traefik.http.routers.tjarksievers-de.rule=Host('tjarksievers.de')"
+      - "traefik.http.routers.tjarksievers-de.rule=Host(`tjarksievers.de`)"
     networks:
       - reverse-proxy
     depends_on:
