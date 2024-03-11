@@ -4,13 +4,10 @@ services:
   frontend:
     image: registry.gitlab.com/ruberhauptmann/saboga-frontend/saboga-frontend:latest
     container_name: saboga-frontend
+    labels:
+      - "traefik.http.routers.frontend.rule=Host('saboga.tjarksievers.de')"
     depends_on:
       - reverse-proxy
-    environment:
-      - VIRTUAL_HOST=saboga.tjarksievers.de
-      - VIRTUAL_PORT=3000
-      - LETSENCRYPT_HOST=saboga.tjarksievers.de
-      - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
     networks:
       - saboga-api
       - reverse-proxy
