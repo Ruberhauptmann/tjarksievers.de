@@ -4,14 +4,14 @@ services:
     image: actualbudget/actual-server:latest
     container_name: budget-tjarksievers-de
     networks:
-      - nginx-proxy
+      - reverse-proxy
     environment:
       - VIRTUAL_HOST=budget.tjarksievers.de
       - VIRTUAL_PORT=5006
       - LETSENCRYPT_HOST=budget.tjarksievers.de
       - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
     depends_on:
-      - nginx-proxy
+      - reverse-proxy
     volumes:
       - actualbudget_data:/data
     restart: unless-stopped

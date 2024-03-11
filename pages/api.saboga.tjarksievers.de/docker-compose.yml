@@ -5,7 +5,7 @@ services:
     image: registry.gitlab.com/ruberhauptmann/sabogaapi/sabogaapi:latest
     container_name: saboga-api
     depends_on:
-      - nginx-proxy
+      - reverse-proxy
     expose:
       - "8000"
     environment:
@@ -17,7 +17,7 @@ services:
       - pages/api.saboga.tjarksievers.de/.env
     networks:
       - saboga-api
-      - nginx-proxy
+      - reverse-proxy
 
   database:
     image: mariadb:latest
