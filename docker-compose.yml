@@ -6,6 +6,7 @@ services:
     container_name: reverse-proxy
     command:
       - "--api.dashboard=true"
+      - "--providers.docker"
       - "--log.level=DEBUG"
     labels:
       - "traefik.http.routers.dashboard.rule=Host(`traefik.tjarksievers.de`)"
