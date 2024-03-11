@@ -6,6 +6,8 @@ services:
     container_name: saboga-frontend
     labels:
       - "traefik.http.routers.frontend.rule=Host(`saboga.tjarksievers.de`)"
+      - "traefik.http.routers.frontend.tls=true"
+      - "traefik.http.routers.frontend.tls.certresolver=certresolver"
     depends_on:
       - reverse-proxy
     networks:

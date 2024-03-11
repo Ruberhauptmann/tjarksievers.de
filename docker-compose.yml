@@ -9,6 +9,8 @@ services:
       - "--providers.docker"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
+      - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
       - "--certificatesresolvers.certresolver.acme.email=tjarksievers@icloud.com"
       - "--certificatesresolvers.certresolver.acme.storage=acme.json"
       - "--certificatesresolvers.certresolver.acme.httpchallenge.entrypoint=web"

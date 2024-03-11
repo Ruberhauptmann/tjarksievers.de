@@ -6,6 +6,8 @@ services:
     container_name: tjarksievers-de
     labels:
       - "traefik.http.routers.tjarksievers-de.rule=Host(`tjarksievers.de`)"
+      - "traefik.http.routers.tjarksievers-de.tls=true"
+      - "traefik.http.routers.tjarksievers-de.tls.certresolver=certresolver"
     networks:
       - reverse-proxy
     depends_on:
