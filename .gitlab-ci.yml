@@ -56,6 +56,7 @@ deploy:
       -f docker-compose.yml
       -f pages/tjarksievers.de/docker-compose.yml
       -f pages/budget.tjarksievers.de/docker-compose.yml
+      -f pages/api.saboga.tjarksievers.de/docker-compose.yml
       -f pages/saboga.tjarksievers.de/docker-compose.yml
       pull
     - > 
