@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   api:
-    image: registry.gitlab.com/ruberhauptmann/sabogaapi/sabogaapi:latest
+    image: registry.gitlab.com/ruberhauptmann/saboga-api/sabogaapi:latest
     container_name: saboga-api
     labels:
       - "traefik.http.routers.api.rule=Host(`api.saboga.tjarksievers.de`)"
