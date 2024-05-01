@@ -1,19 +1,41 @@
 baseURL = "https://tjarksievers.de/"
 title = "Tjark Sievers"
 theme = "sunflower"
-paginate = 20
+paginate = 9
 languageCode = "en"
 DefaultContentLanguage = "en"
 ignoreFiles = ['README.md$']
 
 copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
-author = "Tjark Sievers"
 
 [Params]
   mainSections = ["projects", "blog"]
   favicon = "favicon.svg"
   hero = "sunset.jpg"
-  abstract = "Hi, I'm Tjark. I study physics and do stuff with computers."
+  abstract = """
+    I'm a Physics master student currently working on my master thesis, a joint project
+    between Prof. Tim Wehling at Universität Hamburg and Prof. Annica Black-Schaffer at Uppsala University.
+    My research interest is the theory of superconductivity in strongly correlated electron systems.
+    """
+
+[Params.social.orcid]
+  link = "https://orcid.org/0000-0002-4365-7729"
+
+[Params.social.email]
+  link = "tsievers@physnet.uni-hamburg.de"
+
+[Params.social.gitlab]
+  link = "https://gitlab.com/Ruberhauptmann"
+
+[Params.social.linkedin]
+  link = "https://linkedin.com/in/tjark-sievers-5b95822b9"
+
+[Params.cv]
+  url = "/cv/"
+  download = "https://gitlab.com/Ruberhauptmann/cv/-/raw/main/academic_cv_en.pdf"
+  general = true
+  education = true
+  work_experience = true
 
 [taxonomies]
   category = "categories"
@@ -25,33 +47,22 @@ author = "Tjark Sievers"
 
 [menu]
 [[menu.main]]
+  name = "CV"
+  url = "/cv"
+  weight = -120
+[[menu.main]]
   name = "Projects"
   url = "/categories/project-showcases"
-  weight = -130
+  weight = -120
 [[menu.main]]
   name = "Blog"
   url = "/blog"
-  weight = -120
+  weight = -110
 [[menu.main]]
   name = "Lecture Notes"
   url = "/lecture-notes"
-  weight = -110
-[[menu.main]]
-  name = "CV"
-  url = "/cv"
   weight = -100
 [[menu.main]]
   name = "About"
   url = "/about"
   weight = 0
-
-[Params.social]
-  mastodon = "https://tech.lgbt/@tjark"
-  orcid = "https://orcid.org/0000-0002-4365-7729"
-
-[Params.cv]
-  url = "/cv/"
-  general = true
-  education = true
-  work_experience = true
-  publications = false

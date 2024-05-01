@@ -8,3 +8,5 @@ tags = ["Hugo", "TailwindCSS", "DaisyUI"]
 +++
 
 A clean Hugo theme with yellows and greens using TailwindCSS and DaisyUI components.
+
+![Screenshot of an example site](screenshot.png)

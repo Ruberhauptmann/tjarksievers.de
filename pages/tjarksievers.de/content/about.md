@@ -1,9 +1,9 @@
 +++
-title = "About Me"
+title = "Contact Me"
 description = ""
-date = "2022-10-30"
+date = 2024-05-01
 aliases = ["about-me", "about", "contact"]
 author = "Tjark Sievers"
 +++
 
-Hi, I'm Tjark. I study physics and do stuff with computers.
+Email: [tsievers@physnet.uni-hamburg.de](mailto:tsievers@physnet.uni-hamburg.de)
