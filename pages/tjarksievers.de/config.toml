@@ -36,6 +36,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
   general = true
   education = true
   work_experience = true
+  technical_skills = true
 
 [taxonomies]
   category = "categories"
