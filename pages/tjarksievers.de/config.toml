@@ -32,7 +32,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 
 [Params.cv]
   url = "/cv/"
-  download = "https://gitlab.com/Ruberhauptmann/cv/-/raw/main/academic_cv_en.pdf"
+  download = "https://gitlab.com/Ruberhauptmann/cv/-/raw/main/TjarkSieversAcademicCV_en.pdf"
   general = true
   education = true
   work_experience = true
