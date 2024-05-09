@@ -19,8 +19,6 @@ build-index:
     - docker pull $INDEX_IMAGE_TAG:latest || true
     - docker build --cache-from $INDEX_IMAGE_TAG:latest --pull -t $INDEX_IMAGE_TAG pages/tjarksievers.de/
     - docker push $INDEX_IMAGE_TAG
-  tags:
-    - docker
 
 #test-index:
 #  image: $INDEX_IMAGE_TAG
@@ -68,7 +66,5 @@ deploy:
       -f pages/saboga.tjarksievers.de/docker-compose.yml
       up -d --build
     - docker --context=production exec saboga-api alembic upgrade head
-  tags:
-    - docker
   only:
     - main
