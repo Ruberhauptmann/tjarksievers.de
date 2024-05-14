@@ -1,7 +1,7 @@
-export COMPOSE_FILE="
+export COMPOSE_FILE='
   docker-compose.yml:
   pages/tjarksievers.de/docker-compose.yml
-"
+'
 
 echo "${COMPOSE_FILE}"
 
