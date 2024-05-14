@@ -1,6 +1,4 @@
 stages:
-  - build
-  #- test
   - deploy
 
 variables:
@@ -10,23 +8,6 @@ variables:
 services:
   - docker:20-dind
 
-build-index:
-  image: docker:20
-  stage: build
-  before_script:
-    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
-  script:
-    - docker pull $INDEX_IMAGE_TAG:latest || true
-    - docker build --cache-from $INDEX_IMAGE_TAG:latest --pull -t $INDEX_IMAGE_TAG pages/tjarksievers.de/
-    - docker push $INDEX_IMAGE_TAG
-
-#test-index:
-#  image: $INDEX_IMAGE_TAG
-#  stage: test
-#  script:
-#    - echo "test not yet implemented"
-#  tags:
-#    - docker
 
 deploy:
   image: docker:20
@@ -35,11 +16,6 @@ deploy:
     - unset DOCKER_HOST
     - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - docker context import production production.dockercontext
-    - eval $(ssh-agent -s)
-    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
-    - mkdir -p ~/.ssh
-    - chmod 700 ~/.ssh
-    - cat host_key.txt >> ~/.ssh/known_hosts
   script:
     - > 
       docker --context=production compose

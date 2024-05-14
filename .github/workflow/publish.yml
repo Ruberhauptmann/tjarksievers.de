@@ -1,0 +1,43 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deployment:
+    environment:
+      name: production
+      url: https://tjarksievers.de
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Setup ssh auth
+      run: >
+        eval $(ssh-agent -s)
+        ssh-add - <<< "$SSH_PRIVATE_KEY"
+        mkdir -p ~/.ssh
+        chmod 600 ~/.ssh
+        cat host_key.txt >> ~/.ssh/known_hosts
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+    - name: Import docker contect to deploy
+      run: docker context import production production.dockercontext
+    - name: Stop containers
+      run: >
+        docker --context=production compose
+        -f docker-compose.yml 
+        stop
+    - name: Stop containers
+      run: >
+        docker --context=production compose
+        -f docker-compose.yml 
+        pull
+    - name: Start containers
+      run: >
+        docker --context=production compose
+        -f docker-compose.yml 
+        up -d build
