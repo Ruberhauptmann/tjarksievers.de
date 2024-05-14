@@ -28,23 +28,12 @@ jobs:
     - name: Import docker contect to deploy
       run: docker context import production production.dockercontext
     - name: Stop containers
-      run: >
-        docker --context=production compose
-        -f docker-compose.yml 
-        stop
+      run: docker --context=production compose stop
       env:
-        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-    - name: Stop containers
-      run: >
-        docker --context=production compose
-        -f docker-compose.yml 
-        pull
-      env:
-        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
-    - name: Start containers
-      run: >
-        docker --context=production compose
-        -f docker-compose.yml 
-        up -d build
-      env:
+        COMPOSE_FILE: >
+          docker-compose.yml:
+          pages/tjarksievers.de/docker-compose.yml:
+          pages/budget.tjarksievers.de/docker-compose.yml:
+          pages/api.saboga.tjarksievers.de/docker-compose.yml:
+          pages/saboga.tjarksievers.de/docker-compose.yml:
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
