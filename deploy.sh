@@ -1,4 +1,4 @@
-export COMPOSE_FILE=docker-compose.yml
+export COMPOSE_FILE=docker-compose.yml:pages/tjarksievers.de/docker-compose.yml
 
 docker --context=production compose stop
 docker --context=production compose pull
