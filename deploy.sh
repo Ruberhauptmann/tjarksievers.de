@@ -5,3 +5,7 @@ export COMPOSE_FILE="
   pages/api.saboga.tjarksievers.de/docker-compose.yml:
   pages/saboga.tjarksievers.de/docker-compose.yml
 "
+
+docker --context=production compose stop
+docker --context=production compose pull
+docker --context=production compose up -d --build
