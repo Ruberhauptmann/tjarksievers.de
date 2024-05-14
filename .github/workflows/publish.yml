@@ -29,7 +29,6 @@ jobs:
       run: docker context import production production.dockercontext
     - name: Stop containers
       run: >
-        ssh-add -L &&
         docker --context=production compose
         -f docker-compose.yml 
         stop
@@ -40,8 +39,12 @@ jobs:
         docker --context=production compose
         -f docker-compose.yml 
         pull
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
     - name: Start containers
       run: >
         docker --context=production compose
         -f docker-compose.yml 
         up -d build
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
