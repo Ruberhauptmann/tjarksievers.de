@@ -2,7 +2,7 @@ version: '3'
 
 services:
   tjarksievers-de:
-    build: .
+    build: pages/tjarksievers.de
     container_name: tjarksievers-de
     labels:
       - "traefik.http.routers.tjarksievers-de.rule=Host(`tjarksievers.de`)"
