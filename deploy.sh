@@ -1,7 +1,12 @@
-export COMPOSE_FILE='
-  docker-compose.yml:
+files=(
+  docker-compose.yml
   pages/tjarksievers.de/docker-compose.yml
-'
+  )
+
+for i in "${files[@]}"
+do
+  export COMPOSE_FILE=$COMPOSE_FILE:$i
+done
 
 echo "${COMPOSE_FILE}"
 
