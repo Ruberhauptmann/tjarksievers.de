@@ -2,7 +2,7 @@
 
 This repository controls the deployment for all the websites I host.
 
-[![pipeline status](https://gitlab.com/Ruberhauptmann/tjarksievers.de/badges/main/pipeline.svg)](https://gitlab.com/Ruberhauptmann/tjarksievers.de/-/commits/main)
+![Workflow](https://github.com/Ruberhauptmann/tjarksievers.de/actions/workflows/publish.yml/badge.svg)
 
 ## Overview
 

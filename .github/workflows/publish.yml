@@ -21,7 +21,7 @@ jobs:
         ssh-add - <<< "$SSH_PRIVATE_KEY" &&
         mkdir -p ~/.ssh &&
         chmod -R 600 ~/.ssh &&
-        cat host_key.txt >> ~/.ssh/known_hosts
+        cat host_key.txt > ~/.ssh/known_hosts
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
     - name: Import docker contect to deploy
