@@ -30,6 +30,7 @@ jobs:
       run: docker context import production production.dockercontext
     - name: Stop containers
       run: >
+        ssh-add -L &&
         docker --context=production compose
         -f docker-compose.yml 
         stop
