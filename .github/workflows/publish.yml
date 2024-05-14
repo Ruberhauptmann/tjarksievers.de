@@ -18,11 +18,11 @@ jobs:
     - name: Setup ssh auth
       run: >
         eval $(ssh-agent -s) &&
-        ssh-add - <<< "$SSH_PRIVATE_KEY" &&
         mkdir -p ~/.ssh &&
-        chmod -R 600 ~/.ssh &&
-        ls -la ~ &&
-        cat host_key.txt > ~/.ssh/known_hosts
+        chmod 700 ~/.ssh &&
+        ssh-add - <<< "$SSH_PRIVATE_KEY" &&
+        ls -la ~/.ssh &&
+        cat host_key.txt >> ~/.ssh/known_hosts
       env:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
     - name: Import docker contect to deploy
