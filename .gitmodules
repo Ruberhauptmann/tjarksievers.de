@@ -3,7 +3,7 @@
 	url = https://github.com/Ruberhauptmann/cv-data.git
 [submodule "pages/tjarksievers.de/content/lecture-notes"]
 	path = pages/tjarksievers.de/content/lecture-notes
-	url = ../lecture-notes.git
+	url = https://github.com/Ruberhauptmann/lecture-notes.git
 [submodule "pages/tjarksievers.de/themes/sunflower"]
 	path = pages/tjarksievers.de/themes/sunflower
 	url = https://github.com/Ruberhauptmann/sunflower.git
