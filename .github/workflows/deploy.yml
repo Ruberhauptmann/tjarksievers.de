@@ -16,7 +16,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
       with:
-        ssh-key: ${{ env.LECTURE_NOTES_DEPLOY_KEY }}
+        ssh-key: ${{ secrets.LECTURE_NOTES_DEPLOY_KEY }}
         submodules: 'recursive'
     - name: Setup ssh auth
       run: >
