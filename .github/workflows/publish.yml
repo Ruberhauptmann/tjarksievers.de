@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v1
     - name: Setup ssh auth
       run: >
-        ssh-agent -a $SSH_AUTH_SOCK > /dev/null
+        ssh-agent -a $SSH_AUTH_SOCK > /dev/null &&
         eval $(ssh-agent -s) &&
         mkdir -p ~/.ssh &&
         chmod 700 ~/.ssh &&
