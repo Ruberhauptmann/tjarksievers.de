@@ -1,12 +1,10 @@
 files=(
   docker-compose.yml
   pages/tjarksievers.de/docker-compose.yml
-  )
+)
 
-for i in "${files[@]}"
-do
-  export COMPOSE_FILE=$COMPOSE_FILE:$i
-done
+COMPOSE_FILE=$( IFS=:; printf '%s' "${files[*]}" )
+export COMPOSE_FILE
 
 echo "${COMPOSE_FILE}"
 
