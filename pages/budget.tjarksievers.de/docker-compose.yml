@@ -1,4 +1,3 @@
-version: '3'
 services:
   actual_server:
     image: actualbudget/actual-server:latest

@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   tjarksievers-de:
     build: pages/tjarksievers.de
