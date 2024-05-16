@@ -17,17 +17,17 @@ services:
       - reverse-proxy
 
   database:
-    image: mariadb:latest
+    image: mongo:jammy
     container_name: saboga-database
     volumes:
-      - mariadb-data:/var/lib/mysql
+      - mongodb-data:/data/db
     env_file:
       - pages/api.saboga.tjarksievers.de/.env
     networks:
       - saboga-api
 
 volumes:
-  mariadb-data:
+  mongodb-data:
 networks:
   saboga-api:
     name: saboga-api
