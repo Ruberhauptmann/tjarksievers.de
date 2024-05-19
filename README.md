@@ -29,8 +29,6 @@ Create a new directory under `pages`, named like the subdomain it should run und
 
 All that is needed is a `docker-compose.yml` file, this needs to include at least the following to be reachable from outside:
 ```
-version: '3'
-
 services:
   <service_name>:
     container_name: <container_name>
@@ -45,3 +43,11 @@ services:
 ```
 
 In the `.gitlab-ci.yml` file, under `deploy` add the file under all the under `docker-compose.yml` file (in all the locations!).
+
+## Database for saboga
+
+Authentication is enable via the docker-compose environment file
+
+https://www.mongodb.com/docs/manual/tutorial/create-users/#configure-users-for-self-hosted-deployments
+
+Then add the user ``api-user``, give role ``dbAdmin`` on database ``boardgame``
