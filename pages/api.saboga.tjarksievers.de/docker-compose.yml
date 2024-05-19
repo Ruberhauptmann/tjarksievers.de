@@ -18,7 +18,7 @@ services:
     image: mongo:jammy
     container_name: saboga-database
     volumes:
-      - mongodb-data:/data/db
+      - saboga_db_data:/data/db
     environment:
       MONGO_INITDB_ROOT_USERNAME: siteUserAdmin
       MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_SITEUSERADMIN}
@@ -26,7 +26,7 @@ services:
       - saboga-api
 
 volumes:
-  mongodb-data:
+  saboga_db_data:
 networks:
   saboga-api:
     name: saboga-api
