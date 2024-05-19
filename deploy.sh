@@ -10,6 +10,8 @@ COMPOSE_FILE=$( IFS=:; printf '%s' "${files[*]}" )
 export COMPOSE_FILE
 
 echo "${COMPOSE_FILE}"
+echo "${DB_PASSWORD}"
+
 
 docker --context=production compose stop
 docker --context=production compose pull
