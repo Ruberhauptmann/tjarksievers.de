@@ -6,7 +6,7 @@ target:
   host: "saboga-database" # Mongod host name
   port: 27017 # Mongodb port
   database: # Database name, leave blank to backup all databases
-  username: "siteUserAdmin" # Username, leave blank if auth is not enabled
+  username: "backup" # Username, leave blank if auth is not enabled
   password: "" # Password
   params: "--authenticationDatabase admin" # Additional mongodump params, leave blank if not needed
   noGzip: false # Disable gzip compression (false means compression is enabled)
@@ -14,10 +14,3 @@ target:
 retry:
   attempts: 3 # number of retries
   backoffFactor: 60 # backoff factor  * (2 ^ attemptCount) seconds
-
-validation:
-  database:
-    host: "127.0.0.1"
-    port: 27017
-    noGzip: false
-    database: test_restore # Database name for restore operation

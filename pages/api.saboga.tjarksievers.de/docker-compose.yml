@@ -33,8 +33,6 @@ services:
       - /mgob/storage:/storage
       - /mgob/tmp:/tmp
       - /mgob/data:/data
-    environment:
-      BACKUP__TARGET_PASSWORD: ${MONGODB_BACKUP}
     networks:
       - saboga-api
 
@@ -43,4 +41,4 @@ volumes:
 networks:
   saboga-api:
     name: saboga-api
-    driver: bridge
+    driver: overlay
