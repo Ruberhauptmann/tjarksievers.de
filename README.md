@@ -48,6 +48,10 @@ In the `.gitlab-ci.yml` file, under `deploy` add the file under all the under `d
 
 Authentication is enable via the docker-compose environment file
 
-https://www.mongodb.com/docs/manual/tutorial/create-users/#configure-users-for-self-hosted-deployments
+This user can authenticate to mongo:
+```shell
+docker exec -it saboga-database mongosh --authenticationDatabase admin -u "siteUserAdmin" -p
+```
+Then add the user ``api-user``, give role ``dbAdmin`` on database ``boardgames``
 
-Then add the user ``api-user``, give role ``dbAdmin`` on database ``boardgame``
+Add user ``backup``, give role ``backup``on database ``admin``

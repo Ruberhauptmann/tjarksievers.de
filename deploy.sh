@@ -9,8 +9,8 @@ files=(
 COMPOSE_FILE=$( IFS=:; printf '%s' "${files[*]}" )
 export COMPOSE_FILE
 
-echo "${COMPOSE_FILE}"
-
 docker --context=production compose stop
 docker --context=production compose pull
 docker --context=production compose up -d --build
+
+cp pages/api.saboga.tjarksievers.de/backup.yaml /mgob/config/backup.yaml

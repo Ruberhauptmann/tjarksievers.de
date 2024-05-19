@@ -34,4 +34,5 @@ jobs:
       run: ./deploy.sh
       env:
         MONGODB_SITEUSERADMIN: ${{ secrets.MONGODB_SITEUSERADMIN }}
+        MONGODB_BACKUP: ${{ secrets.MONGODB_BACKUP }}
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock

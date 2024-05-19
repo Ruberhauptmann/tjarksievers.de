@@ -25,6 +25,20 @@ services:
     networks:
       - saboga-api
 
+
+    database-backup:
+      image: stefanprodan/mgob
+      name: saboga-mgob
+      volumes:
+        - /mgob/config:/config
+        - /mgob/storage:/storage
+        - /mgob/tmp:/tmp
+        - /mgob/data:/data
+      environment:
+        BACKUP__TARGET_PASSWORD: ${MONGODB_BACKUP}
+      networks:
+        - saboga-api
+
 volumes:
   saboga_db_data:
 networks:
