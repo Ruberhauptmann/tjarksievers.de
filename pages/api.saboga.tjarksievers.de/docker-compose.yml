@@ -27,7 +27,7 @@ services:
 
   database-backup:
     image: stefanprodan/mgob
-    name: saboga-mgob
+    container_name: saboga-mgob
     volumes:
       - /mgob/config:/config
       - /mgob/storage:/storage
