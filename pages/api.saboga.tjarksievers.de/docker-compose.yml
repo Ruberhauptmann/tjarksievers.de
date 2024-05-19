@@ -10,8 +10,6 @@ services:
       - "8000"
     depends_on:
       - reverse-proxy
-    env_file:
-      - pages/api.saboga.tjarksievers.de/.env
     networks:
       - saboga-api
       - reverse-proxy
@@ -21,8 +19,9 @@ services:
     container_name: saboga-database
     volumes:
       - mongodb-data:/data/db
-    env_file:
-      - pages/api.saboga.tjarksievers.de/.env
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: siteUserAdmin
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_SITEUSERADMIN}
     networks:
       - saboga-api
 
