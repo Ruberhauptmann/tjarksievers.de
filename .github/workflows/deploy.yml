@@ -33,4 +33,5 @@ jobs:
     - name: Run deployment
       run: ./deploy.sh
       env:
+        DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
