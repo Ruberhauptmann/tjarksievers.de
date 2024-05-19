@@ -1,11 +1,11 @@
 services:
-  api:
+  saboga-api:
     image: ghcr.io/ruberhauptmann/saboga-api:latest
     container_name: saboga-api
     labels:
-      - "traefik.http.routers.api.rule=Host(`api.saboga.tjarksievers.de`)"
-      - "traefik.http.routers.api.tls=true"
-      - "traefik.http.routers.api.tls.certresolver=certresolver"
+      - "traefik.http.routers.saboga-api.rule=Host(`api.saboga.tjarksievers.de`)"
+      - "traefik.http.routers.saboga-api.tls=true"
+      - "traefik.http.routers.saboga-api.tls.certresolver=certresolver"
     expose:
       - "8000"
     depends_on:
