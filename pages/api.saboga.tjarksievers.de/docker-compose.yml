@@ -8,6 +8,8 @@ services:
       - "traefik.http.routers.saboga-api.tls.certresolver=certresolver"
     expose:
       - "8000"
+    environment:
+      MONGODB_API_USER: ${MONGODB_API_USER}
     depends_on:
       - reverse-proxy
     networks:
