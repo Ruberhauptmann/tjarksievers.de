@@ -1,7 +1,7 @@
 +++
 title = "tjarksievers.de"
 date = 2023-05-28
-link = "https://gitlab.com/Ruberhauptmann/tjarksievers.de"
+link = "https://github.com/Ruberhauptmann/tjarksievers.de"
 author = "Tjark Sievers"
 categories = ["Project Showcases"]
 tags = ["Docker"]
@@ -16,5 +16,5 @@ All pages get deployed on every commit to main.
 
 Current pages under the domain:
 - Landing page with my CV, project showcases and a blog at [tjarksievers.de](https://tjarksievers.de)
-- A Grafana installation at [grafana.tjarksievers.de](https://grafana.tjarksievers.de)
-- An InfluxDB installation at [influx.tjarksievers.de](https://influx.tjarksievers.de)
+- [api.saboga.tjarksievers.de](https://api.saboga.tjarksievers.de)
+- [saboga.tjarksievers.de](https://saboga.tjarksievers.de)
