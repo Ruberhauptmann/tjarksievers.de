@@ -11,7 +11,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 [Params]
   mainSections = ["projects"]
   favicon = "favicon.svg"
-  profile = "profile.jpeg"
+  profile = "profile.jpg"
   hero = "sunset.jpg"
   abstract = """
     I'm a Physics master student currently working on my master thesis, a joint project
@@ -25,8 +25,8 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 [Params.social.email]
   link = "tsievers@physnet.uni-hamburg.de"
 
-[Params.social.gitlab]
-  link = "https://gitlab.com/Ruberhauptmann"
+[Params.social.github]
+  link = "https://github.com/Ruberhauptmann"
 
 [Params.social.linkedin]
   link = "https://linkedin.com/in/tjark-sievers-5b95822b9"
