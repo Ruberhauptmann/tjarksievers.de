@@ -1,5 +1,5 @@
 services:
-  tjarksievers-de:
+  sunflower-tjarksievers-de:
     build: pages/sunflower.tjarksievers.de
     container_name: sunflower-tjarksievers-de
     labels:
