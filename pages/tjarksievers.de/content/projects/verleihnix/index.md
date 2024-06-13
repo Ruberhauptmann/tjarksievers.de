@@ -3,7 +3,7 @@ title = "Verleihnix"
 date = 2024-03-06
 author = "Tjark Sievers"
 categories = ["Project Showcases"]
-tags = ["Python", "Flask", "Docker", "TailwindCSS"]
+tags = ["Python", "Django", "Docker", "TailwindCSS"]
 +++
 
 During my time working at the PHYSnet data centre, I developed a web application based on Flask to interface with a database containing data about devices we managed.

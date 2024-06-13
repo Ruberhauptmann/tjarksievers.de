@@ -54,7 +54,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
   weight = -120
 [[menu.main]]
   name = "Projects"
-  url = "/categories/project-showcases"
+  url = "/projects"
   weight = -120
 #[[menu.main]]
 #  name = "Blog"

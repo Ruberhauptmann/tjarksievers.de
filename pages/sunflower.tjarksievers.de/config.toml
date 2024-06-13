@@ -1,0 +1,70 @@
+theme = "sunflower"
+languageCode = "en-us"
+baseURL = "https://sunflower.tjarksievers.de"
+title = "Sunflower Example Site"
+
+copyright = "Copyright © 2024, Joe Bob, all rights reserved."
+
+paginate = 2
+
+[params]
+  favicon = "sunflower.png"
+  hero = "hero.jpg"
+  profile = "profile.jpg"
+  mainSections = ["projects", "blog"]
+  abstract = "This is a site showing the capacities of the sunflower theme for hugo."
+
+[params.social.orcid]
+  link = "#orcid"
+
+[params.social.email]
+  link = "#email"
+
+[params.social.github]
+  link = "#github"
+
+[params.social.linkedin]
+  link = "#linkedin"
+
+[params.cv]
+  url = "/cv/"
+  download = "#cvdownload"
+  general = true
+  education = true
+  work_experience = true
+  technical_skills = true
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[frontmatter]
+date = ['date_finished', ':default']
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+
+[menu]
+[[menu.main]]
+  name = "CV"
+  url = "/cv"
+  weight = -120
+[[menu.main]]
+  name = "Projects"
+  url = "/categories/project-showcases"
+  weight = -120
+[[menu.main]]
+  name = "Blog"
+  url = "/blog"
+  weight = -110
+[[menu.main]]
+  name = "Lecture Notes"
+  url = "/lecture-notes"
+  weight = -100
+[[menu.main]]
+  name = "About"
+  url = "/about"
+  weight = 0

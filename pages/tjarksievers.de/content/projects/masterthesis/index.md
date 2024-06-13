@@ -8,6 +8,6 @@ tags = ["Thesis"]
 draft = true
 +++
 
-The whole manuscript can be found in [this repository](https://git.physnet.uni-hamburg.de/tsievers/masters-thesis-manuscript).
+The whole manuscript can be found in [this repository](https://github.com/Ruberhauptmann/masters-thesis-manuscript).
 
 

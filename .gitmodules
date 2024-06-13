@@ -7,3 +7,6 @@
 [submodule "pages/tjarksievers.de/themes/sunflower"]
 	path = pages/tjarksievers.de/themes/sunflower
 	url = https://github.com/Ruberhauptmann/sunflower.git
+[submodule "pages/sunflower.tjarksievers.de/themes/sunflower"]
+	path = pages/sunflower.tjarksievers.de/themes/sunflower
+	url = https://github.com/Ruberhauptmann/sunflower.git

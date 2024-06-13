@@ -1,0 +1,12 @@
+services:
+  tjarksievers-de:
+    build: pages/sunflower.tjarksievers.de
+    container_name: sunflower-tjarksievers-de
+    labels:
+      - "traefik.http.routers.tjarksievers-de.rule=Host(`sunflower.tjarksievers.de`)"
+      - "traefik.http.routers.tjarksievers-de.tls=true"
+      - "traefik.http.routers.tjarksievers-de.tls.certresolver=certresolver"
+    networks:
+      - reverse-proxy
+    depends_on:
+      - reverse-proxy
