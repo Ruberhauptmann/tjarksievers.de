@@ -16,7 +16,7 @@ services:
       - saboga-api
       - reverse-proxy
 
-  database:
+  saboga-database:
     image: mongo:jammy
     container_name: saboga-database
     volumes:
@@ -27,7 +27,7 @@ services:
     networks:
       - saboga-api
 
-  database-backup:
+  saboga-database-backup:
     image: stefanprodan/mgob
     container_name: saboga-mgob
     volumes:
