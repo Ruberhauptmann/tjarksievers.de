@@ -6,15 +6,13 @@ services:
       - "traefik.http.routers.saboga-api.rule=Host(`api.saboga.tjarksievers.de`)"
       - "traefik.http.routers.saboga-api.tls=true"
       - "traefik.http.routers.saboga-api.tls.certresolver=certresolver"
-    expose:
-      - "8000"
     environment:
       MONGODB_API_USER: ${MONGODB_API_USER}
     depends_on:
       - reverse-proxy
     networks:
-      - saboga-api
       - reverse-proxy
+      - saboga-api
 
   saboga-database:
     image: mongo:jammy

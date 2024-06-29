@@ -1,7 +1,8 @@
 +++
-title = "Contact Me"
+title = "About Me"
 description = ""
 date = 2024-05-01
+layout = "about"
 aliases = ["about-me", "about", "contact"]
 author = "Tjark Sievers"
 +++

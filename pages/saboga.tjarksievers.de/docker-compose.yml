@@ -1,13 +1,13 @@
 version: '3.8'
 
 services:
-  frontend:
+  saboga-frontend:
     image: registry.gitlab.com/ruberhauptmann/saboga-frontend/saboga-frontend:latest
     container_name: saboga-frontend
     labels:
-      - "traefik.http.routers.frontend.rule=Host(`saboga.tjarksievers.de`)"
-      - "traefik.http.routers.frontend.tls=true"
-      - "traefik.http.routers.frontend.tls.certresolver=certresolver"
+      - "traefik.http.routers.saboga-frontend.rule=Host(`saboga.tjarksievers.de`)"
+      - "traefik.http.routers.saboga-frontend.tls=true"
+      - "traefik.http.routers.saboga-frontend.tls.certresolver=certresolver"
     depends_on:
       - reverse-proxy
     networks:
