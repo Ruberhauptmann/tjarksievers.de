@@ -42,5 +42,5 @@ volumes:
   saboga_db_data:
 networks:
   saboga-api:
-    name: saboga-api
-    driver: overlay
+    driver: bridge
+    internal: true

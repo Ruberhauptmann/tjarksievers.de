@@ -32,6 +32,3 @@ services:
 networks:
   reverse-proxy:
     driver: bridge
-  saboga-api:
-    driver: bridge
-    internal: true
