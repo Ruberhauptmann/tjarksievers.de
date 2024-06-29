@@ -10,5 +10,5 @@ services:
       - reverse-proxy
       - saboga-api
     networks:
-      - saboga-api
       - reverse-proxy
+      - saboga-api
