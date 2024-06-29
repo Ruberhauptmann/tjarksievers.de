@@ -52,6 +52,6 @@ This user can authenticate to mongo:
 ```shell
 docker exec -it saboga-database mongosh --authenticationDatabase admin -u "siteUserAdmin" -p
 ```
-Then add the user ``api-user``, give role ``dbAdmin`` on database ``boardgames``
+Then add the user ``api-user``, give role ``readWrite`` on database ``boardgames``
 
 Add user ``backup``, give role ``backup``on database ``admin``
