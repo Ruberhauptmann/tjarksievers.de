@@ -42,8 +42,6 @@ services:
 volumes:
   saboga_db_data:
 networks:
-  reverse-proxy:
-    external: True
   saboga-api:
     name: saboga-api
     driver: overlay
