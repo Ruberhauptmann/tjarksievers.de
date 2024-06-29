@@ -36,6 +36,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
   download = "https://raw.githubusercontent.com/Ruberhauptmann/cv/main/TjarkSieversAcademicCV_en.pdf"
   general = true
   education = true
+  schools_conferences = true
   work_experience = true
   technical_skills = true
 
