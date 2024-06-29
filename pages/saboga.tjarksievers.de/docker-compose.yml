@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   saboga-frontend:
     image: registry.gitlab.com/ruberhauptmann/saboga-frontend/saboga-frontend:latest

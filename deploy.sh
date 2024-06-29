@@ -4,7 +4,7 @@ files=(
   pages/sunflower.tjarksievers.de/docker-compose.yml
   pages/budget.tjarksievers.de/docker-compose.yml
   pages/api.saboga.tjarksievers.de/docker-compose.yml
-  #pages/saboga.tjarksievers.de/docker-compose.yml
+  pages/saboga.tjarksievers.de/docker-compose.yml
 )
 
 COMPOSE_FILE=$( IFS=:; printf '%s' "${files[*]}" )
