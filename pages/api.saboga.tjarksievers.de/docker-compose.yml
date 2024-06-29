@@ -2,7 +2,6 @@ services:
   saboga-api:
     image: ghcr.io/ruberhauptmann/saboga-api:latest
     container_name: saboga-api
-    command: "uvicorn sabogaapi.main:app --workers 1 --host 0.0.0.0 --port 8000"
     labels:
       - "traefik.http.routers.saboga-api.rule=Host(`api.saboga.tjarksievers.de`)"
       - "traefik.http.routers.saboga-api.tls=true"
