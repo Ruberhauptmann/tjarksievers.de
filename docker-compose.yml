@@ -5,7 +5,7 @@ services:
     command:
       - "--api.dashboard=true"
       - "--providers.docker"
-      - "--providers.docker.network=reverse-proxy"
+      - "--providers.docker.network=tjarksieversde_reverse-proxy"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
       - "--entrypoints.web.http.redirections.entryPoint.to=websecure"

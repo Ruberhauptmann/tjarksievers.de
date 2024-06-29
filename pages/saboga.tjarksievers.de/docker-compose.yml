@@ -8,9 +8,7 @@ services:
       - "traefik.http.routers.saboga-frontend.tls.certresolver=certresolver"
     depends_on:
       - reverse-proxy
+      - saboga-api
     networks:
       - saboga-api
       - reverse-proxy
-
-networks:
-  saboga-api:
