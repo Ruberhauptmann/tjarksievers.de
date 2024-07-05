@@ -5,6 +5,7 @@ link = "https://github.com/Ruberhauptmann/tjarksievers.de"
 author = "Tjark Sievers"
 categories = ["Project Showcases"]
 tags = ["Docker"]
+image = "screenshot.png"
 +++
 
 This website and its deployment process are available publicly on Gitlab.

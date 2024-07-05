@@ -5,4 +5,5 @@ link = "https://github.com/Ruberhauptmann/quant-met"
 author = "Tjark Sievers"
 categories = ["Project Showcases"]
 tags = ["Python"]
+image = "plot.png"
 +++

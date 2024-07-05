@@ -4,6 +4,7 @@ date = 2024-03-06
 author = "Tjark Sievers"
 categories = ["Project Showcases"]
 tags = ["Python", "Django", "Docker", "TailwindCSS"]
+image = "verleihnix_1.png"
 +++
 
 During my time working at the PHYSnet data centre, I developed a web application based on Flask to interface with a database containing data about devices we managed.
