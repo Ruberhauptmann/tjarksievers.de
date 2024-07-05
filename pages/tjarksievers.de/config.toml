@@ -18,6 +18,8 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
     between Prof. Tim Wehling at Universität Hamburg and Prof. Annica Black-Schaffer at Uppsala University.
     My research interest is the theory of superconductivity in strongly correlated electron systems.
     """
+  bgg_username = "ourkindofart"
+  bgg_title = "Last boardgames played"
 
 [Params.social.orcid]
   link = "https://orcid.org/0000-0002-4365-7729"
