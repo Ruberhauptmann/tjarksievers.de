@@ -12,3 +12,50 @@ services:
     networks:
       - reverse-proxy
       - saboga-api
+
+  saboga-api:
+    image: ghcr.io/ruberhauptmann/saboga-api:latest
+    container_name: saboga-api
+    labels:
+      - "traefik.http.routers.saboga-api.rule=Host(`saboga.tjarksievers.de`) && PathPrefix(`/api`)"
+      - "traefik.http.routers.saboga-api.tls=true"
+      - "traefik.http.routers.saboga-api.tls.certresolver=certresolver"
+    environment:
+      MONGODB_API_USER: ${MONGODB_API_USER}
+    expose:
+      - "8000"
+    depends_on:
+      - reverse-proxy
+    networks:
+      - reverse-proxy
+      - saboga-api
+
+  saboga-database:
+    image: mongo:jammy
+    container_name: saboga-database
+    volumes:
+      - saboga_db_data:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: siteUserAdmin
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_SITEUSERADMIN}
+    networks:
+      - saboga-api
+
+  saboga-database-backup:
+    image: stefanprodan/mgob
+    container_name: saboga-mgob
+    volumes:
+      - /mgob/config:/config
+      - /mgob/storage:/storage
+      - /mgob/tmp:/tmp
+      - /mgob/data:/data
+    networks:
+      - saboga-api
+
+volumes:
+  saboga_db_data:
+
+networks:
+  saboga-api:
+    driver: bridge
+    internal: true
