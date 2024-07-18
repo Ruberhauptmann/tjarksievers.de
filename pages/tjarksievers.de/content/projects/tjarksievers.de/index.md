@@ -1,6 +1,6 @@
 +++
 title = "tjarksievers.de"
-date = 2023-05-28
+date = 2024-07-17
 link = "https://github.com/Ruberhauptmann/tjarksievers.de"
 author = "Tjark Sievers"
 categories = ["Project Showcases"]
@@ -17,5 +17,6 @@ All pages get deployed on every commit to main.
 
 Current pages under the domain:
 - Landing page with my CV, project showcases and a blog at [tjarksievers.de](https://tjarksievers.de)
-- [api.saboga.tjarksievers.de](https://api.saboga.tjarksievers.de)
-- [saboga.tjarksievers.de](https://saboga.tjarksievers.de)
+- Backend for saboga at [saboga.tjarksievers.de/api](https://saboga.tjarksievers.de/api)
+- Frontend for saboga at [saboga.tjarksievers.de](https://saboga.tjarksievers.de)
+- Example site for the sunflower theme at [sunflower.tjarksievers.de](https://sunflower.tjarksievers.de)
