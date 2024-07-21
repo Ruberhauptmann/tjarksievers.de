@@ -1,6 +1,6 @@
 services:
   saboga-frontend:
-    image: registry.gitlab.com/ruberhauptmann/saboga-frontend/saboga-frontend:0.0.1
+    image: ghcr.io/ruberhauptmann/saboga-frontend:0.0.1
     container_name: saboga-frontend
     labels:
       - "traefik.http.routers.saboga-frontend.rule=Host(`saboga.tjarksievers.de`)"
