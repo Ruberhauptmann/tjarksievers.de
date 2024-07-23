@@ -13,8 +13,9 @@ All pages get deployed on every commit to main.
 
 Current pages under the domain:
 - Landing page with my CV, project showcases and a blog at [tjarksievers.de](https://tjarksievers.de)
-- A Grafana installation at [grafana.tjarksievers.de](https://grafana.tjarksievers.de)
-- An InfluxDB installation at [influx.tjarksievers.de](https://influx.tjarksievers.de)
+- Backend for saboga at [saboga.tjarksievers.de/api](https://saboga.tjarksievers.de/api)
+- Frontend for saboga at [saboga.tjarksievers.de](https://saboga.tjarksievers.de)
+- Example site for the sunflower theme at [sunflower.tjarksievers.de](https://sunflower.tjarksievers.de)
 
 ## Setup server for deployment
 
