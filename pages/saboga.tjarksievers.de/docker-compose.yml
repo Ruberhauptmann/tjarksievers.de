@@ -23,6 +23,8 @@ services:
       - "traefik.http.routers.saboga-api.tls.certresolver=certresolver"
     environment:
       MONGODB_API_USER: ${MONGODB_API_USER}
+    volumes:
+      - saboga_api_static:/app/static
     expose:
       - "8000"
     depends_on:
