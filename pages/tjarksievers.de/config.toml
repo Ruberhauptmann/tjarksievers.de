@@ -60,10 +60,10 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
   name = "Projects"
   url = "/projects"
   weight = -120
-#[[menu.main]]
-#  name = "Blog"
-#  url = "/blog"
-#  weight = -110
+[[menu.main]]
+  name = "Publications"
+  url = "/publications"
+  weight = -110
 [[menu.main]]
   name = "Lecture Notes"
   url = "/lecture-notes"

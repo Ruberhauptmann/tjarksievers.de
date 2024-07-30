@@ -7,3 +7,6 @@ categories = ["Project Showcases"]
 tags = ["Python"]
 image = "plot.png"
 +++
+
+I created this software package during my master thesis to structure my coding work.
+It is used to study superconductivity in a certain flat-band system.

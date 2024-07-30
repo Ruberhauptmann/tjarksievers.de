@@ -57,13 +57,9 @@ date = ['date_finished', ':default']
   url = "/categories/project-showcases"
   weight = -120
 [[menu.main]]
-  name = "Blog"
-  url = "/blog"
-  weight = -110
-[[menu.main]]
   name = "Lecture Notes"
   url = "/lecture-notes"
-  weight = -100
+  weight = -110
 [[menu.main]]
   name = "About"
   url = "/about"

@@ -1,9 +1,4 @@
 +++
-title = "About"
-description = ""
-date = "2022-09-21"
-author = ""
+layout = 'about'
+title = 'About me'
 +++
-
-[Email](mailto:#joebob)
-
