@@ -4,8 +4,8 @@ theme = "sunflower"
 paginate = 8
 languageCode = "en"
 DefaultContentLanguage = "en"
-ignoreFiles = ['README.md$']
-summaryLength = 10
+ignoreFiles = ['README.md$', '\.bib$']
+summaryLength = 20
 
 copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 
