@@ -1,5 +1,5 @@
 +++
-title = "sunflower"
+title = "Sunflower"
 date = 2024-01-07
 link = "https://github.com/Ruberhauptmann/sunflower"
 author = "Tjark Sievers"

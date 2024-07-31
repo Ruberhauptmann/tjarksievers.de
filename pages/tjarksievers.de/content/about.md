@@ -7,4 +7,4 @@ aliases = ["about-me", "about", "contact"]
 author = "Tjark Sievers"
 +++
 
-Email: [tsievers@physnet.uni-hamburg.de](mailto:tsievers@physnet.uni-hamburg.de)
+You can best reach me via email: [tsievers@physnet.uni-hamburg.de](mailto:tsievers@physnet.uni-hamburg.de)

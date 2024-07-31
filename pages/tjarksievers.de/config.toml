@@ -53,16 +53,16 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 
 [menu]
 [[menu.main]]
+  name = "Publications"
+  url = "/publications"
+  weight = -130
+[[menu.main]]
   name = "CV"
   url = "/cv"
   weight = -120
 [[menu.main]]
   name = "Projects"
-  url = "/projects"
-  weight = -120
-[[menu.main]]
-  name = "Publications"
-  url = "/publications"
+  url = "/categories/project-showcases"
   weight = -110
 [[menu.main]]
   name = "Lecture Notes"
