@@ -9,6 +9,7 @@ services:
     depends_on:
       - reverse-proxy
       - saboga-api
+    restart: always
     networks:
       - reverse-proxy
       - saboga-api
@@ -25,6 +26,7 @@ services:
       MONGODB_API_USER: ${MONGODB_API_USER}
     volumes:
       - saboga_api_static:/app/static
+    restart: always
     expose:
       - "8000"
     depends_on:
@@ -41,12 +43,14 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: siteUserAdmin
       MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_SITEUSERADMIN}
+    restart: always
     networks:
       - saboga-api
 
   saboga-database-backup:
     image: stefanprodan/mgob
     container_name: saboga-mgob
+    restart: always
     volumes:
       - /mgob/config:/config
       - /mgob/storage:/storage

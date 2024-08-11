@@ -6,6 +6,7 @@ services:
       - "traefik.http.routers.tjarksievers-de.rule=Host(`tjarksievers.de`)"
       - "traefik.http.routers.tjarksievers-de.tls=true"
       - "traefik.http.routers.tjarksievers-de.tls.certresolver=certresolver"
+    restart: always
     networks:
       - reverse-proxy
     depends_on:

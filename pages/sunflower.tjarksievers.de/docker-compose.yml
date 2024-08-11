@@ -6,6 +6,7 @@ services:
       - "traefik.http.routers.sunflower-tjarksievers-de.rule=Host(`sunflower.tjarksievers.de`)"
       - "traefik.http.routers.sunflower-tjarksievers-de.tls=true"
       - "traefik.http.routers.sunflower-tjarksievers-de.tls.certresolver=certresolver"
+    restart: always
     networks:
       - reverse-proxy
     depends_on:

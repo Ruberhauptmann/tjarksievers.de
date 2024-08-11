@@ -12,7 +12,7 @@ services:
       - reverse-proxy
     volumes:
       - actualbudget_data:/data
-    restart: unless-stopped
+    restart: always
 
 volumes:
   actualbudget_data: {}
