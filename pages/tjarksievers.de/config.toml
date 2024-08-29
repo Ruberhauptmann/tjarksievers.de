@@ -4,7 +4,7 @@ theme = "sunflower"
 paginate = 8
 languageCode = "en"
 DefaultContentLanguage = "en"
-ignoreFiles = ['README.md$', '\.bib$']
+ignoreFiles = ['README.md$']
 summaryLength = 20
 
 copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
@@ -41,6 +41,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
   education = true
   schools_conferences = true
   work_experience = true
+  publications = true
   technical_skills = true
 
 [taxonomies]
@@ -52,10 +53,10 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
   date = ['date_finished', ':default']
 
 [menu]
-[[menu.main]]
-  name = "Publications"
-  url = "/publications"
-  weight = -130
+#[[menu.main]]
+#  name = "Publications"
+#  url = "/publications"
+#  weight = -130
 [[menu.main]]
   name = "CV"
   url = "/cv"
