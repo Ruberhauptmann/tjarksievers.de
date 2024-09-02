@@ -41,7 +41,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
   education = true
   schools_conferences = true
   work_experience = true
-  publications = true
+  #publications = true
   technical_skills = true
 
 [taxonomies]
