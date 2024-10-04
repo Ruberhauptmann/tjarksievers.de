@@ -1,6 +1,6 @@
 services:
   actual_server:
-    image: actualbudget/actual-server:edge
+    image: actualbudget/actual-server:latest
     container_name: budget-tjarksievers-de
     labels:
       - "traefik.http.routers.actual_server.rule=Host(`budget.tjarksievers.de`)"
