@@ -3,7 +3,7 @@ FROM node:current-bookworm AS hugo
 COPY hugo_extended_0.135.0_linux-amd64.deb /src
 
 RUN apt-get -y update
-RUN apt-get -y install /src/hugo_extended_0.135.0_linux-amd64.deb
+RUN apt -y install /src/hugo_extended_0.135.0_linux-amd64.deb
 
 RUN mkdir /src
 WORKDIR /src
