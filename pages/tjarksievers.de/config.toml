@@ -11,6 +11,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 
 [Params]
   mainSections = ["projects"]
+  homepageSections = ["posts"]
   favicon = "favicon.svg"
   profile = "profile.jpg"
   hero = "sunset.jpg"
@@ -24,15 +25,14 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 
 [Params.social.orcid]
   link = "https://orcid.org/0000-0002-4365-7729"
-
 [Params.social.email]
   link = "tsievers@physnet.uni-hamburg.de"
-
 [Params.social.github]
   link = "https://github.com/Ruberhauptmann"
-
 [Params.social.linkedin]
   link = "https://linkedin.com/in/tjark-sievers-5b95822b9"
+[params.social.gpg]
+  link = "/gpg.txt"
 
 [Params.cv]
   url = "/cv/"
