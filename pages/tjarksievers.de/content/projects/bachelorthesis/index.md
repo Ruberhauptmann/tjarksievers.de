@@ -6,7 +6,6 @@ icon = "file-pdf-o"
 author = "Tjark Sievers"
 categories = ["Project Showcases"]
 tags = ["Thesis", "Computational Physics", "DFT"]
-image = "screenshot.png"
 +++
 
 In summary, my bachelor project was about a software package used in the research group and how to best run it on our local compute cluster.

@@ -31,7 +31,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
   link = "https://github.com/Ruberhauptmann"
 [Params.social.linkedin]
   link = "https://linkedin.com/in/tjark-sievers-5b95822b9"
-[params.social.gpg]
+[Params.social.gpg]
   link = "/gpg.txt"
 
 [Params.cv]

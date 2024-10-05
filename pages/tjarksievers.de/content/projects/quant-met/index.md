@@ -1,12 +1,11 @@
 +++
 title = "quant-met"
-date = 2024-06-13
+date = 2024-10-05
 link = "https://github.com/Ruberhauptmann/quant-met"
 author = "Tjark Sievers"
 categories = ["Project Showcases"]
 tags = ["Python"]
-image = "plot.png"
 +++
 
-I created this software package during my master thesis to structure my coding work.
+I created this software package during my master thesis.
 It is used to study superconductivity in a certain flat-band system.
