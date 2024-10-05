@@ -9,6 +9,8 @@ tags = ["Docker"]
 
 This website and its deployment process are available publicly on Gitlab.
 
+<!--more-->
+
 Deployment is done via Gitlab CI, using Docker containers to separate the different services running on the server.
 All the pages can be found under `pages` in respective directories.
 Each page has its own `docker-compose.yml` file, these are added in the `.gitlab-ci.yml` to be deployed.

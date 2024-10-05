@@ -10,4 +10,6 @@ image = "screenshot.png"
 
 A clean Hugo theme with yellows and greens using TailwindCSS and DaisyUI components.
 
+<!--more-->
+
 ![Screenshot of an example site](screenshot.png)
