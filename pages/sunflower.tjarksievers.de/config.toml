@@ -2,37 +2,46 @@ theme = "sunflower"
 languageCode = "en-us"
 baseURL = "https://sunflower.tjarksievers.de"
 title = "Sunflower Example Site"
+ignoreFiles = ['\.bib$']
 
-copyright = "Copyright © 2024, Joe Bob, all rights reserved."
+copyright = "Copyright © 2024, Leon N. Cooper, all rights reserved."
 
 paginate = 2
 
 [params]
-  favicon = "sunflower.png"
-  hero = "hero.jpg"
-  profile = "profile.jpg"
-  mainSections = ["projects", "blog"]
-  abstract = "This is a site showing the capacities of the sunflower theme for hugo."
+favicon = "sunflower.png"
+hero = "hero.jpg"
+profile = "profile.png"
+mainSections = ["projects", "blog"]
+abstract = """
+    This is a site showing the capacities of the sunflower theme for hugo.
+    Using the example of the Nobel laureate Leon N. Cooper, it shows the features it specifically has for the needs of academics.
+  """
+bgg_username = "ourkindofart"
+bgg_title = "Last boardgames played"
+publicationLastName = "Cooper"
 
 [params.social.orcid]
-  link = "#orcid"
+link = "#orcid"
 
 [params.social.email]
-  link = "#email"
+link = "#email"
 
 [params.social.github]
-  link = "#github"
+link = "#github"
 
 [params.social.linkedin]
-  link = "#linkedin"
+link = "#linkedin"
 
 [params.cv]
-  url = "/cv/"
-  download = "#cvdownload"
-  general = true
-  education = true
-  work_experience = true
-  technical_skills = true
+url = "/cv/"
+download = "#cvdownload"
+general = true
+publications = true
+education = true
+schools_conferences = true
+work_experience = true
+technical_skills = true
 
 [taxonomies]
 category = "categories"
@@ -44,23 +53,27 @@ date = ['date_finished', ':default']
 
 # syntax highlight settings
 [markup]
-  [markup.highlight]
-    style = "dracula"
+[markup.highlight]
+style = "dracula"
 
 [menu]
 [[menu.main]]
-  name = "CV"
-  url = "/cv"
-  weight = -120
+name = "Publications"
+url = "/publications"
+weight = -130
 [[menu.main]]
-  name = "Projects"
-  url = "/categories/project-showcases"
-  weight = -120
+name = "CV"
+url = "/cv"
+weight = -120
 [[menu.main]]
-  name = "Lecture Notes"
-  url = "/lecture-notes"
-  weight = -110
+name = "Projects"
+url = "/categories/project-showcases"
+weight = -110
 [[menu.main]]
-  name = "About"
-  url = "/about"
-  weight = 0
+name = "Lecture Notes"
+url = "/lecture-notes"
+weight = -100
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 0
