@@ -2,13 +2,15 @@
 title = "Quantum Field Theory"
 date_finished = 2022-12-15
 download = "classnotes.pdf"
-icon = "file-pdf-o"
+icon = "fa-solid fa-file-pdf"
 author = "Leon Cooper"
 categories = ["Lecture Notes"]
 tags = ["Quantum Field Theory", "Theoretical Physics"]
 +++
 
 These lecture notes cover the foundational concepts of Quantum Field Theory (QFT), focusing on quantizing classical fields and understanding particle interactions through the framework of quantum mechanics. Topics include second quantization, Feynman diagrams, and gauge symmetries.
+
+<!--more-->
 
 Contents:
 1. Introduction to Quantum Fields

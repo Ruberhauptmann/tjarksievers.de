@@ -1,13 +1,15 @@
 +++
 title = "Quantum Statistical Models"
 date = 1962-03-08
-link = "https://example.com/quantum-statistical-models"
+link = "https://wikipedia.org/wiki/Quantum_statistical_mechanics"
+icon = "fa-brands fa-wikipedia-w"
 author = "Leon Cooper"
 categories = ["Project Showcases"]
 tags = ["Statistical Physics", "Quantum Mechanics", "Condensed Matter Physics"]
-image = "quantum-statistical-models.png"
 +++
 
-This project involves the development of quantum statistical models, providing insights into the behavior of particles in condensed matter systems. These models are vital for understanding phenomena such as superconductivity and superfluidity.
+This project involves the development of quantum statistical models, providing insights into the behavior of particles in condensed matter systems.
 
-![Graphical model of quantum statistics](quantum-statistical-models.png)
+<!--more-->
+
+These models are vital for understanding phenomena such as superconductivity and superfluidity.
