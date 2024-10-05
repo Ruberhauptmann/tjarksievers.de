@@ -1,12 +1,12 @@
 FROM node:current-bookworm AS hugo
 
+RUN mkdir /src
+WORKDIR /src
+
 COPY hugo_extended_0.135.0_linux-amd64.deb /src/
 
 RUN apt-get -y update
 RUN apt-get -y install /src/hugo_extended_0.135.0_linux-amd64.deb
-
-RUN mkdir /src
-WORKDIR /src
 
 COPY themes/ /src/themes/
 COPY config.toml /src/
