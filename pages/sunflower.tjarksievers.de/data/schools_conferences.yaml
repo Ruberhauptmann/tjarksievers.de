@@ -1,9 +1,24 @@
 en:
-  juelich:
-    name: "Autumn School on Correlated Electrons: Correlations and Phase Transitions"
-    startdate: 2024-09-16
-    enddate: 2024-09-20
-    location: Jülich, Germany
-    url: www.cond-mat.de/events/correl24/
-    poster: raw.githubusercontent.com/Ruberhauptmann/juelichautumn2024-poster/main/poster.pdf
-    poster_title: Test
+  solvay_conference:
+    name: "Solvay Conference on Physics"
+    startdate: 1961-10-31
+    enddate: 1961-11-06
+    location: Brussels, Belgium
+    url: en.wikipedia.org/wiki/Solvay_Conference
+    poster: example.com/solvay1961-poster.pdf
+    poster_title: "BCS Theory and Quantum Mechanics: Bridging the Gap"
+  nobel_symposium:
+    name: "Nobel Symposium on Superconductivity"
+    startdate: 1972-06-12
+    enddate: 1972-06-16
+    location: Stockholm, Sweden
+    url: example.com/nobel1972-symposium
+    poster: example.com/nobel1972-poster.pdf
+    poster_title: "Advancements in the BCS Theory of Superconductivity"
+  princeton_seminar:
+    name: "Princeton Seminar on Superconductivity"
+    startdate: 1957-05-01
+    enddate: 1957-05-03
+    location: Princeton, NJ, USA
+    url: example.com/princeton1957-seminar
+    poster_title: "Electron Pairs and the Mechanism of Superconductivity"

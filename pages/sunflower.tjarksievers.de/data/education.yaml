@@ -1,22 +1,18 @@
 en:
-  current:
-    master:
-      name: "M. Sc."
-      institution: "City University"
-      location: "Citycity"
-      date: 2022-10-01
-      grade: "1.5"
   former:
+    phd:
+      name: Ph.D. in Physics
+      institution: Columbia University
+      location: New York, NY
+      date: 1954-01-01
+      notes: "Doctoral dissertation under the supervision of Robert Serber"
+    master:
+      name: M.A. in Physics
+      institution: Columbia University
+      location: New York, NY
+      date: 1950-01-01
     bachelor:
-      name: "B.Sc."
-      institution: "City University"
-      location: "Citycity"
-      date: 2022-07-01
-      grade: "1.47"
-      notes: "Thesis: Blablablabla"
-    abitur:
-      name: "A-levels"
-      institution: "Townschool"
-      location: "Towntown"
-      date: 2018-07-10
-      grade: 2.1
+      name: B.A. in Physics
+      institution: Columbia College, Columbia University
+      location: New York, NY
+      date: 1946-01-01

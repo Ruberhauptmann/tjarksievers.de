@@ -1,29 +1,36 @@
 en:
   current:
-    junior:
-      position: "Junior Developer"
-      company: "SoftWare"
+    Brown_University:
+      position: Professor of Physics
+      company: Brown University
       achievements:
-        - "Did a lot more stuff. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id iaculis ligula, id finibus dui. Nulla mauris diam, condimentum non felis sit amet, convallis sagittis risus. Donec sit amet ex at velit vehicula aliquam et in nisi. Nulla facilisi. Nunc pharetra nibh a mollis hendrerit. Pellentesque in dui tempus, luctus sapien ut, ultrices lectus"
-        - "Did other stuff"
-      location: "Citycity"
-      startdate: 2019-12-01
+        - "Developed the Cooper pair concept, fundamental to the BCS theory of superconductivity"
+        - "Mentored several generations of physicists in the field of condensed matter physics"
+      location: Providence, RI, USA
+      startdate: 1958-01-01
   former:
-    internship:
-      position: "Intern"
-      company: "Capacitors GmbH"
+    Institute_for_Advanced_Study:
+      position: Research Associate
+      company: Institute for Advanced Study
       achievements:
-        - "Did stuff"
-        - "Did a bit more stuff"
-      location: "Towntown"
-      startdate: 2017-05-01
-      enddate: 2019-11-01
-    internship 2:
-      position: "Intern"
-      company: "Capacitors GmbH"
-      achievements":
-        - "Did stuff"
-        - "Did a bit more stuff"
-      location: "Towntown"
-      startdate: 2014-04-01
-      enddate: 2016-10-01
+        - "Collaborated with leading physicists on foundational problems in quantum theory and superconductivity"
+      location: Princeton, NJ, USA
+      startdate: 1955-01-01
+      enddate: 1957-01-01
+    Ohio_State_University:
+      position: Assistant Professor of Physics
+      company: Ohio State University
+      achievements:
+        - "Contributed to early research on electron pairing in superconductors"
+      location: Columbus, OH, USA
+      startdate: 1954-01-01
+      enddate: 1955-01-01
+    Columbia_University:
+      position: Graduate Research Assistant
+      company: Columbia University
+      achievements:
+        - "Conducted research leading to the development of the BCS theory of superconductivity"
+        - "Completed doctoral dissertation under the supervision of Robert Serber"
+      location: New York, NY, USA
+      startdate: 1950-01-01
+      enddate: 1954-01-01

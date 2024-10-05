@@ -1,9 +1,8 @@
 en:
-  name: "Joe Bob"
-  email: "joebob@joebob.com"
-  website: "joebob.com"
+  name: Leon Cooper
+  email: leon.cooper@example.com
+  website: leoncooper.com
   other_links:
-    Orcid: "orcid.org/0000-0000-0000-0000"
-    Gitlab: "gitlab.com/joebob101"
-    Github: "github.com/joebob101"
-    Twitter: "twitter.com/joebob101"
+    Orcid: orcid.org/0000-0001-2345-6789
+    Github: github.com/leoncooper
+    LinkedIn: linkedin.com/in/leon-cooper
