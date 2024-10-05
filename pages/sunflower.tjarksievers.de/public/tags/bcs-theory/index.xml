@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BCS Theory on Sunflower Example Site</title>
+    <link>https://sunflower.tjarksievers.de/tags/bcs-theory/</link>
+    <description>Recent content in BCS Theory on Sunflower Example Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Leon N. Cooper, all rights reserved.</copyright>
+    <lastBuildDate>Sun, 15 May 1960 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunflower.tjarksievers.de/tags/bcs-theory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Superconductivity Research</title>
+      <link>https://sunflower.tjarksievers.de/projects/superconductivity-research/</link>
+      <pubDate>Sun, 15 May 1960 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/superconductivity-research/</guid>
+      <description>&lt;p&gt;This project delves into the groundbreaking research conducted on superconductivity, leading to the development of the BCS theory.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BCS Theory: The Foundation of Superconductivity</title>
+      <link>https://sunflower.tjarksievers.de/projects/bcs-theory/</link>
+      <pubDate>Mon, 01 Apr 1957 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/bcs-theory/</guid>
+      <description>&lt;p&gt;The BCS theory, named after Bardeen, Cooper, and Schrieffer, explains how electron pairs, known as Cooper pairs, form in a superconductor and enable it to conduct electricity without resistance.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

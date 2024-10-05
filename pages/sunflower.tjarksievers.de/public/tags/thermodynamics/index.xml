@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thermodynamics on Sunflower Example Site</title>
+    <link>https://sunflower.tjarksievers.de/tags/thermodynamics/</link>
+    <description>Recent content in Thermodynamics on Sunflower Example Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Leon N. Cooper, all rights reserved.</copyright>
+    <lastBuildDate>Wed, 30 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunflower.tjarksievers.de/tags/thermodynamics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Statistical Mechanics</title>
+      <link>https://sunflower.tjarksievers.de/lecture-notes/statistical-mechanics/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/lecture-notes/statistical-mechanics/</guid>
+      <description>&lt;p&gt;These lecture notes provide an in-depth treatment of Statistical Mechanics, linking macroscopic thermodynamic properties to microscopic behaviors through probability theory. Topics include classical ensembles, phase transitions, and applications in condensed matter physics.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

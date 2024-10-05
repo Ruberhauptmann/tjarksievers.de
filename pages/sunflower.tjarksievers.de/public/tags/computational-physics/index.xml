@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Computational Physics on Sunflower Example Site</title>
+    <link>https://sunflower.tjarksievers.de/tags/computational-physics/</link>
+    <description>Recent content in Computational Physics on Sunflower Example Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Leon N. Cooper, all rights reserved.</copyright>
+    <lastBuildDate>Sat, 14 Feb 1959 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunflower.tjarksievers.de/tags/computational-physics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Early Computational Models for Superconductivity</title>
+      <link>https://sunflower.tjarksievers.de/projects/early-computational-models-for-sc/</link>
+      <pubDate>Sat, 14 Feb 1959 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/early-computational-models-for-sc/</guid>
+      <description>&lt;p&gt;In this project, Leon Cooper developed early computational models to simulate superconducting behavior using the emerging tools of computational physics.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

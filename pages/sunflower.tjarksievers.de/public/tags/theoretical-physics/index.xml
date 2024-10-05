@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theoretical Physics on Sunflower Example Site</title>
+    <link>https://sunflower.tjarksievers.de/tags/theoretical-physics/</link>
+    <description>Recent content in Theoretical Physics on Sunflower Example Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Leon N. Cooper, all rights reserved.</copyright>
+    <lastBuildDate>Thu, 15 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunflower.tjarksievers.de/tags/theoretical-physics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quantum Field Theory</title>
+      <link>https://sunflower.tjarksievers.de/lecture-notes/quantum-field-theory/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/lecture-notes/quantum-field-theory/</guid>
+      <description>&lt;p&gt;These lecture notes cover the foundational concepts of Quantum Field Theory (QFT), focusing on quantizing classical fields and understanding particle interactions through the framework of quantum mechanics. Topics include second quantization, Feynman diagrams, and gauge symmetries.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

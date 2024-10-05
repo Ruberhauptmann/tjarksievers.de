@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quantum Mechanics on Sunflower Example Site</title>
+    <link>https://sunflower.tjarksievers.de/tags/quantum-mechanics/</link>
+    <description>Recent content in Quantum Mechanics on Sunflower Example Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Leon N. Cooper, all rights reserved.</copyright>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunflower.tjarksievers.de/tags/quantum-mechanics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Quantum Mechanics</title>
+      <link>https://sunflower.tjarksievers.de/lecture-notes/quantum-mechanics/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/lecture-notes/quantum-mechanics/</guid>
+      <description>&lt;p&gt;This document provides an introduction to the core concepts of quantum mechanics, including wave-particle duality, the uncertainty principle, and basic quantum equations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quantum Statistical Models</title>
+      <link>https://sunflower.tjarksievers.de/projects/quantum-statistical-methods/</link>
+      <pubDate>Thu, 08 Mar 1962 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/quantum-statistical-methods/</guid>
+      <description>&lt;p&gt;This project involves the development of quantum statistical models, providing insights into the behavior of particles in condensed matter systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Early Computational Models for Superconductivity</title>
+      <link>https://sunflower.tjarksievers.de/projects/early-computational-models-for-sc/</link>
+      <pubDate>Sat, 14 Feb 1959 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/early-computational-models-for-sc/</guid>
+      <description>&lt;p&gt;In this project, Leon Cooper developed early computational models to simulate superconducting behavior using the emerging tools of computational physics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cooper Pairs and Condensed Matter Physics</title>
+      <link>https://sunflower.tjarksievers.de/projects/cooper-pairs/</link>
+      <pubDate>Mon, 22 Jul 1957 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/cooper-pairs/</guid>
+      <description>&lt;p&gt;This project explores the role of Cooper pairs in condensed matter physics, specifically in the study of superconductors.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

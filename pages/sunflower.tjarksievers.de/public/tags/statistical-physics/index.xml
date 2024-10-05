@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistical Physics on Sunflower Example Site</title>
+    <link>https://sunflower.tjarksievers.de/tags/statistical-physics/</link>
+    <description>Recent content in Statistical Physics on Sunflower Example Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Leon N. Cooper, all rights reserved.</copyright>
+    <lastBuildDate>Thu, 08 Mar 1962 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunflower.tjarksievers.de/tags/statistical-physics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quantum Statistical Models</title>
+      <link>https://sunflower.tjarksievers.de/projects/quantum-statistical-methods/</link>
+      <pubDate>Thu, 08 Mar 1962 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/quantum-statistical-methods/</guid>
+      <description>&lt;p&gt;This project involves the development of quantum statistical models, providing insights into the behavior of particles in condensed matter systems.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

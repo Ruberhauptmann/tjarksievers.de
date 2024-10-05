@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Sunflower Example Site</title>
+    <link>https://sunflower.tjarksievers.de/</link>
+    <description>Recent content in Home on Sunflower Example Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Copyright © 2024, Leon N. Cooper, all rights reserved.</copyright>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sunflower.tjarksievers.de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Quantum Mechanics</title>
+      <link>https://sunflower.tjarksievers.de/lecture-notes/quantum-mechanics/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/lecture-notes/quantum-mechanics/</guid>
+      <description>&lt;p&gt;This document provides an introduction to the core concepts of quantum mechanics, including wave-particle duality, the uncertainty principle, and basic quantum equations.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://sunflower.tjarksievers.de/about/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/about/</guid>
+      <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;&#xA;&lt;p&gt;I am Leon Cooper, a theoretical physicist, best known for my work on the BCS theory of superconductivity, for which I was awarded the Nobel Prize in Physics. My research primarily focuses on condensed matter physics, quantum mechanics, and computational models in physics.&lt;/p&gt;&#xA;&lt;p&gt;Throughout my career, I have explored various aspects of quantum statistical mechanics and the behavior of particles in low-temperature systems, making contributions to the field of superconductivity and quantum computing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quantum Field Theory</title>
+      <link>https://sunflower.tjarksievers.de/lecture-notes/quantum-field-theory/</link>
+      <pubDate>Thu, 15 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/lecture-notes/quantum-field-theory/</guid>
+      <description>&lt;p&gt;These lecture notes cover the foundational concepts of Quantum Field Theory (QFT), focusing on quantizing classical fields and understanding particle interactions through the framework of quantum mechanics. Topics include second quantization, Feynman diagrams, and gauge symmetries.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Statistical Mechanics</title>
+      <link>https://sunflower.tjarksievers.de/lecture-notes/statistical-mechanics/</link>
+      <pubDate>Wed, 30 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/lecture-notes/statistical-mechanics/</guid>
+      <description>&lt;p&gt;These lecture notes provide an in-depth treatment of Statistical Mechanics, linking macroscopic thermodynamic properties to microscopic behaviors through probability theory. Topics include classical ensembles, phase transitions, and applications in condensed matter physics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quantum Statistical Models</title>
+      <link>https://sunflower.tjarksievers.de/projects/quantum-statistical-methods/</link>
+      <pubDate>Thu, 08 Mar 1962 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/quantum-statistical-methods/</guid>
+      <description>&lt;p&gt;This project involves the development of quantum statistical models, providing insights into the behavior of particles in condensed matter systems.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Superconductivity Research</title>
+      <link>https://sunflower.tjarksievers.de/projects/superconductivity-research/</link>
+      <pubDate>Sun, 15 May 1960 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/superconductivity-research/</guid>
+      <description>&lt;p&gt;This project delves into the groundbreaking research conducted on superconductivity, leading to the development of the BCS theory.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Early Computational Models for Superconductivity</title>
+      <link>https://sunflower.tjarksievers.de/projects/early-computational-models-for-sc/</link>
+      <pubDate>Sat, 14 Feb 1959 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/early-computational-models-for-sc/</guid>
+      <description>&lt;p&gt;In this project, Leon Cooper developed early computational models to simulate superconducting behavior using the emerging tools of computational physics.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cooper Pairs and Condensed Matter Physics</title>
+      <link>https://sunflower.tjarksievers.de/projects/cooper-pairs/</link>
+      <pubDate>Mon, 22 Jul 1957 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/cooper-pairs/</guid>
+      <description>&lt;p&gt;This project explores the role of Cooper pairs in condensed matter physics, specifically in the study of superconductors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BCS Theory: The Foundation of Superconductivity</title>
+      <link>https://sunflower.tjarksievers.de/projects/bcs-theory/</link>
+      <pubDate>Mon, 01 Apr 1957 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/projects/bcs-theory/</guid>
+      <description>&lt;p&gt;The BCS theory, named after Bardeen, Cooper, and Schrieffer, explains how electron pairs, known as Cooper pairs, form in a superconductor and enable it to conduct electricity without resistance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>https://sunflower.tjarksievers.de/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/cv/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Publications</title>
+      <link>https://sunflower.tjarksievers.de/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sunflower.tjarksievers.de/publications/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
