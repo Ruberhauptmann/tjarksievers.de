@@ -5,9 +5,13 @@ en:
       projects:
         project-1:
           name: Project 1
-          description:
+          description: Biuhfiuh
           link: link
-  other:
+        project-2:
+          name: Project 2
+          description: uhfuih
+          link: link
+  technical:
     docker:
       name: Docker
       projects:

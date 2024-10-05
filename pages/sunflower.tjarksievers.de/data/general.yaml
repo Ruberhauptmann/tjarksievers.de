@@ -2,8 +2,8 @@ en:
   name: "Joe Bob"
   email: "joebob@joebob.com"
   website: "joebob.com"
-  orcid: "orcid.org/0000-0000-0000-0000"
   other_links:
+    Orcid: "orcid.org/0000-0000-0000-0000"
     Gitlab: "gitlab.com/joebob101"
     Github: "github.com/joebob101"
     Twitter: "twitter.com/joebob101"

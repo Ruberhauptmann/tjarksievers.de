@@ -1,0 +1,74 @@
+{
+  "config": {
+    "id": "36a3b0b5-bad0-4a04-b79b-441c7cef77db",
+    "label": "BetterBibTeX JSON",
+    "preferences": {},
+    "options": {
+      "exportNotes": false,
+      "exportFileData": false,
+      "Items": true,
+      "Preferences": false,
+      "keepUpdated": false,
+      "worker": false,
+      "Normalize": false
+    }
+  },
+  "version": {
+    "zotero": "6.0.37",
+    "bbt": "6.7.214"
+  },
+  "collections": {},
+  "items": [
+    {
+      "version": 9014,
+      "itemType": "preprint",
+      "title": "A new BCS paper?!",
+      "abstractNote": "",
+      "date": "2024-07-11",
+      "shortTitle": "A new BCS paper?!",
+      "libraryCatalog": "arXiv.org",
+      "url": "http://arxiv.org/abs/2310.09063",
+      "accessDate": "2024-07-18T09:45:17Z",
+      "extra": "arXiv:2310.09063 [cond-mat]",
+      "DOI": "10.48550/arXiv.2310.09063",
+      "repository": "arXiv",
+      "archiveID": "arXiv:2310.09063",
+      "creators": [
+        {
+          "firstName": "L. N.",
+          "lastName": "Cooper",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "J.",
+          "lastName": "Bardeen",
+          "creatorType": "author"
+        },
+        {
+          "firstName": "J. R.",
+          "lastName": "Schrieffer",
+          "creatorType": "author"
+        }
+      ],
+      "tags": [
+        {
+          "tag": "Pass 1"
+        }
+      ],
+      "relations": {
+        "dc:replaces": [
+          "http://zotero.org/users/6773287/items/BDX9FNRN",
+          "http://zotero.org/users/6773287/items/KAXZWFCQ"
+        ]
+      },
+      "dateAdded": "2024-02-06T08:30:33Z",
+      "dateModified": "2024-07-18T09:58:46Z",
+      "uri": "http://zotero.org/users/6773287/items/TS9XMQRT",
+      "citationKey": "wittBypassingLatticeBCSBEC2024",
+      "itemID": 1920,
+      "itemKey": "TS9XMQRT",
+      "libraryID": 1,
+      "select": "zotero://select/library/items/TS9XMQRT"
+    }
+  ]
+}
