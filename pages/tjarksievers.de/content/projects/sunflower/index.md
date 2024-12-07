@@ -12,4 +12,4 @@ A clean Hugo theme with yellows and greens using TailwindCSS and DaisyUI compone
 
 <!--more-->
 
-![Screenshot of an example site](screenshot.png)
+![Screenshot of an example site](screenshot.webp)

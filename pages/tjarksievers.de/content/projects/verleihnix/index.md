@@ -12,9 +12,9 @@ Some Tasks using this database were giving out PCs, Laptops and monitors to rese
 
 I managed to simplify many steps, for example automatically filling out the fields for hostnames with a specified naming scheme based on what hostnames are already given out or providing a simple interface to match inventory numbers given by the university management to the serial numbers of devices that were freshly delivered and then writing it into the database.
 
-![image](verleihnix_1.png)
+![image](verleihnix_1.webp)
 
-![image](verleihnix_2.png)
+![image](verleihnix_2.webp)
 
-![image](verleihnix_3.png)
+![image](verleihnix_3.webp)
 
