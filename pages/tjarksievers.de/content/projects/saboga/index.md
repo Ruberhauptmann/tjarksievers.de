@@ -5,7 +5,7 @@ link = "https://github.com/Ruberhauptmann/saboga-frontend"
 author = "Tjark Sievers"
 categories = ["Project Showcases"]
 tags = ["React", "TailwindCSS", "Docker", "FastAPI", "Python"]
-image = "screenshot.png"
+image = "screenshot.webp"
 +++
 
 This is a little project utilising data from Boardgamegeek to show historical rating and rank data of the ranked games.

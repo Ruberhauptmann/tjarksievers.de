@@ -6,8 +6,9 @@ services:
       - "traefik.http.routers.tjarksievers-de.rule=Host(`tjarksievers.de`)"
       - "traefik.http.routers.tjarksievers-de.tls=true"
       - "traefik.http.routers.tjarksievers-de.tls.certresolver=certresolver"
-      - "traefik.http.routers.tjarksievers-de.middlewares=compress"
+      - "traefik.http.routers.tjarksievers-de.middlewares=compress, http-cache"
       - "traefik.http.middlewares.compress.compress=true"
+      - "traefik.http.middlewares.http-cache.plugin.httpCache.maxTtl=2592000"
     restart: always
     networks:
       - reverse-proxy
