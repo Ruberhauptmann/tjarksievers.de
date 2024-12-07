@@ -8,7 +8,7 @@ services:
       - "traefik.http.routers.tjarksievers-de.tls.certresolver=certresolver"
       - "traefik.http.routers.tjarksievers-de.middlewares=compress, cache-header"
       - "traefik.http.middlewares.compress.compress=true"
-      - "traefik.http.middlewares.cache-header.headers.customrequestheaders.Cache-Control=max-age=20"
+      - "traefik.http.middlewares.cache-header.headers.customresponseheaders.Cache-Control=max-age=20"
     restart: always
     networks:
       - reverse-proxy
