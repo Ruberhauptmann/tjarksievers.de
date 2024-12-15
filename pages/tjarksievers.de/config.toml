@@ -23,14 +23,12 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
   bgg_username = "ourkindofart"
   bgg_title = "Last boardgames played"
 
-[Params.social.orcid]
-  link = "https://orcid.org/0000-0002-4365-7729"
+#[Params.social.orcid]
+#  link = "https://orcid.org/0000-0002-4365-7729"
 [Params.social.email]
   link = "tsievers@physnet.uni-hamburg.de"
 [Params.social.github]
   link = "https://github.com/Ruberhauptmann"
-[Params.social.linkedin]
-  link = "https://linkedin.com/in/tjark-sievers-5b95822b9"
 [Params.social.gpg]
   link = "/gpg.txt"
 

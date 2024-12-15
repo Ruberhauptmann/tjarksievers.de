@@ -8,7 +8,7 @@ This repository controls the deployment for all the websites I host.
 
 Deployment is done via Gitlab CI, using Docker containers to separate the different services running on the server.
 All the pages can be found under `pages` in respective directories.
-Each page has its own `docker-compose.yml` file, these are added in the `.gitlab-ci.yml` to be deployed.
+Each page has its own `docker-compose.yml` file, these are added in the `deploy.sh` file to be deployed in a Github action.
 All pages get deployed on every commit to main.
 
 Current pages under the domain:
@@ -28,26 +28,28 @@ Current pages under the domain:
 
 Create a new directory under `pages`, named like the subdomain it should run under.
 
-All that is needed is a `docker-compose.yml` file, this needs to include at least the following to be reachable from outside:
-```
+All that is needed is a `docker-compose.yml` file, for example for the main page:
+```yaml
 services:
-  <service_name>:
-    container_name: <container_name>
+  tjarksievers-de:
+    build: pages/tjarksievers.de
+    container_name: tjarksievers-de
+    labels:
+      - "traefik.http.routers.tjarksievers-de.rule=Host(`tjarksievers.de`)"
+      - "traefik.http.routers.tjarksievers-de.tls=true"
+      - "traefik.http.routers.tjarksievers-de.tls.certresolver=certresolver"
+    restart: always
     networks:
-      - nginx-proxy
-    environment:
-      - VIRTUAL_HOST=tjarksievers.de
-      - LETSENCRYPT_HOST=tjarksievers.de
-      - LETSENCRYPT_EMAIL=tjark.sievers@outlook.de
+      - reverse-proxy
     depends_on:
-      - nginx-proxy
+      - reverse-proxy
 ```
-
-In the `.gitlab-ci.yml` file, under `deploy` add the file under all the under `docker-compose.yml` file (in all the locations!).
+The labels determine the domain under which the container is hosted, the network ensures that the reverse-proxy container can see and serve the container.
+For deployment, add the path to the `docker-compose.yml` file under files in the `deploy.sh` file.
 
 ## Database for saboga
 
-Authentication is enable via the docker-compose environment file
+Authentication is enabled via the docker-compose environment file
 
 This user can authenticate to mongo:
 ```shell
