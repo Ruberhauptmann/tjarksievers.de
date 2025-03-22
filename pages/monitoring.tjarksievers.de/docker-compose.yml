@@ -25,7 +25,7 @@ services:
     labels:
       - "traefik.http.routers.grafana.rule=Host(`grafana.tjarksievers.de`)"
       - "traefik.http.routers.grafana.tls=true"
-      - "traefik.http.routers.prometheus.tls.certresolver=certresolver"
+      - "traefik.http.routers.grafana.tls.certresolver=certresolver"
     networks:
       - reverse-proxy
     restart: always
