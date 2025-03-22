@@ -1,0 +1,38 @@
+services:
+  prometheus:
+    image: prom/prometheus
+    build:
+      context: pages/monitoring.tjarksievers.de
+      dockerfile: prometheus.Dockerfile
+    container_name: prometheus
+    expose:
+      - "9090"
+    labels:
+      - "traefik.http.routers.prometheus.rule=Host(`prometheus.monitoring.tjarksievers.de`)"
+      - "traefik.http.routers.prometheus.tls=true"
+      - "traefik.docker.network=reverse-proxy"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - reverse-proxy
+    restart: always
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    expose:
+      - "3000"
+    labels:
+      - "traefik.http.routers.grafana.rule=Host(`grafana.monitoring.tjarksievers.de`)"
+      - "traefik.http.routers.grafana.tls=true"
+      - "traefik.docker.network=reverse-proxy"
+    networks:
+      - reverse-proxy
+    restart: always
+    volumes:
+      - grafana-storage:/var/lib/grafana
+
+volumes:
+  grafana-storage:
