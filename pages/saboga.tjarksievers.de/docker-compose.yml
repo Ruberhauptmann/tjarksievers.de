@@ -15,7 +15,7 @@ services:
       - saboga-api
 
   saboga-api:
-    image: ghcr.io/ruberhauptmann/saboga-api:0.0.31
+    image: ghcr.io/ruberhauptmann/saboga-api:0.0.32
     container_name: saboga-api
     labels:
       - "traefik.http.routers.saboga-api.rule=Host(`saboga.tjarksievers.de`) && PathPrefix(`/api`)"
