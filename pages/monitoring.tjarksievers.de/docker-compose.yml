@@ -10,7 +10,7 @@ services:
     labels:
       - "traefik.http.routers.prometheus.rule=Host(`prometheus.tjarksievers.de`)"
       - "traefik.http.routers.prometheus.tls=true"
-      - "traefik.http.routers.saboga-frontend.tls.certresolver=certresolver"
+      - "traefik.http.routers.prometheus.tls.certresolver=certresolver"
     networks:
       - reverse-proxy
     restart: always
@@ -25,7 +25,7 @@ services:
     labels:
       - "traefik.http.routers.grafana.rule=Host(`grafana.tjarksievers.de`)"
       - "traefik.http.routers.grafana.tls=true"
-      - "traefik.http.routers.saboga-frontend.tls.certresolver=certresolver"
+      - "traefik.http.routers.prometheus.tls.certresolver=certresolver"
     networks:
       - reverse-proxy
     restart: always
