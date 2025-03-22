@@ -11,8 +11,6 @@ services:
       - "traefik.http.routers.prometheus.rule=Host(`prometheus.monitoring.tjarksievers.de`)"
       - "traefik.http.routers.prometheus.tls=true"
       - "traefik.docker.network=reverse-proxy"
-    volumes:
-      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
     networks:
       - reverse-proxy
     restart: always
