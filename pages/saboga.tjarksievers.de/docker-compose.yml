@@ -1,6 +1,6 @@
 services:
   saboga-frontend:
-    image: ghcr.io/ruberhauptmann/saboga-frontend:0.0.2
+    image: ghcr.io/ruberhauptmann/saboga-frontend:0.0.3
     container_name: saboga-frontend
     labels:
       - "traefik.http.routers.saboga-frontend.rule=Host(`saboga.tjarksievers.de`)"
@@ -26,7 +26,8 @@ services:
     environment:
       MONGODB_API_USER: ${MONGODB_API_USER}
     volumes:
-      - saboga_api_static:/app/static
+      - saboga_api_static:/static
+      - saboga_api_img:/img
     restart: always
     expose:
       - "8000"
@@ -63,6 +64,7 @@ services:
 volumes:
   saboga_db_data:
   saboga_api_static:
+  saboga_api_img:
 
 networks:
   saboga-api:
