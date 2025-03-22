@@ -8,7 +8,7 @@ services:
     expose:
       - "9090"
     labels:
-      - "traefik.http.routers.prometheus.rule=Host(`prometheus.monitoring.tjarksievers.de`)"
+      - "traefik.http.routers.prometheus.rule=Host(`prometheus.tjarksievers.de`)"
       - "traefik.http.routers.prometheus.tls=true"
       - "traefik.docker.network=reverse-proxy"
     networks:
@@ -23,7 +23,7 @@ services:
     expose:
       - "3000"
     labels:
-      - "traefik.http.routers.grafana.rule=Host(`grafana.monitoring.tjarksievers.de`)"
+      - "traefik.http.routers.grafana.rule=Host(`grafana.tjarksievers.de`)"
       - "traefik.http.routers.grafana.tls=true"
       - "traefik.docker.network=reverse-proxy"
     networks:
