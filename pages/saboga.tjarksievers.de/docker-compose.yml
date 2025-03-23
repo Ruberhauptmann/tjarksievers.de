@@ -36,6 +36,7 @@ services:
     networks:
       - reverse-proxy
       - saboga-api
+      - loki
 
   saboga-database:
     image: mongo:jammy
