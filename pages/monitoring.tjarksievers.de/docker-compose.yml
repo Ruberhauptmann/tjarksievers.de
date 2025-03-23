@@ -1,6 +1,5 @@
 services:
   prometheus:
-    image: prom/prometheus
     build:
       context: pages/monitoring.tjarksievers.de
       dockerfile: prometheus.Dockerfile
@@ -28,9 +27,36 @@ services:
       - "traefik.http.routers.grafana.tls.certresolver=certresolver"
     networks:
       - reverse-proxy
+      - loki
     restart: always
     volumes:
       - grafana-storage:/var/lib/grafana
 
+  loki:
+    image: grafana/loki:latest
+    container_name: loki
+    expose:
+      - "3100"
+    networks:
+      - loki
+
+  promtail:
+    build:
+      context: pages/monitoring.tjarksievers.de
+      dockerfile: promtail.Dockerfile
+    container_name: promtail
+    volumes:
+      - /var/log:/var/log:ro
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./promtail/promtail-config.yaml:/etc/promtail/promtail-config.yaml
+    command: -config.file=/etc/promtail/promtail-config.yaml
+    networks:
+      - loki
+
 volumes:
   grafana-storage:
+networks:
+  loki:
+    driver: bridge
+    internal: true
