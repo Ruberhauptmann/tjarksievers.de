@@ -7,7 +7,7 @@ DefaultContentLanguage = "en"
 ignoreFiles = ['README.md$']
 summaryLength = 20
 
-copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
+copyright = "Copyright © 2025, Tjark Sievers, all rights reserved."
 
 [Params]
   mainSections = ["projects"]
