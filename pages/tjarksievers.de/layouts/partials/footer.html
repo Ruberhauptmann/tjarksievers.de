@@ -5,6 +5,6 @@
             <a href="https://daisyui.com/" class="link link-hover">DaisyUI</a>
         </p>
         <p>{{ .Site.Copyright }}</p>
-        <a class="link" href="{{ .Site.Params.Impressum }}">{{ .Site.Params.Impressum }}</a>
+        {{ if .Site.Params.Impressum }}<a class="link" href="/{{ .Site.Params.Impressum }}">Impressum</a>{{ end }}
     </aside>
 </footer>
