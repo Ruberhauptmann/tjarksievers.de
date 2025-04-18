@@ -8,11 +8,12 @@ COPY hugo_extended_0.135.0_linux-amd64.deb /src/
 RUN apt-get -y update
 RUN apt-get -y install /src/hugo_extended_0.135.0_linux-amd64.deb
 
-COPY themes/ /src/themes/
-COPY config.toml /src/
+COPY assets /src/assets/
 COPY content/ /src/content/
 COPY data/ /src/data/
-COPY assets /src/assets/
+COPY layouts/ /src/layouts/
+COPY themes/ /src/themes/
+COPY config.toml /src/
 
 RUN npm install ./themes/sunflower
 
