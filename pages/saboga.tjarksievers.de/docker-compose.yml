@@ -39,7 +39,7 @@ services:
       - loki
 
   saboga-database:
-    image: mongo:jammy
+    image: mongo:8.0-noble
     container_name: saboga-database
     volumes:
       - saboga_db_data:/data/db

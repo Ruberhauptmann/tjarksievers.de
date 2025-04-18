@@ -11,7 +11,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
 
 [Params]
   mainSections = ["projects"]
-  homepageSections = ["posts"]
+  homepageSections = ["posts", "boardgames"]
   favicon = "favicon.svg"
   profile = "profile.webp"
   hero = "sunset.webp"
@@ -22,6 +22,7 @@ copyright = "Copyright © 2024, Tjark Sievers, all rights reserved."
     """
   bgg_username = "ourkindofart"
   bgg_title = "Last boardgames played"
+  impressum = "impressum"
 
 #[Params.social.orcid]
 #  link = "https://orcid.org/0000-0002-4365-7729"
