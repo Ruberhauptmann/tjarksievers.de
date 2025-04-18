@@ -7,11 +7,13 @@
 {{- partial "header.html" . -}}
 <main class="relative">
     <div class="max-w-[100vw] min-h-screen pb-16">
-        <article>
-            <a href="{{ .Permalink }}" class="link link-hover line-clamp-4">{{ .Title }}</a>
-        </article>
-
         <article class="max-w-prose justify-self-center mx-auto mb-16 px-6 sm:px-4 md:px-0 space-y-2 mt-8">
+            <article>
+                <h2 class="text-2xl">
+                    <a href="{{ .Permalink }}" class="link link-hover line-clamp-4">{{ .Title }}</a>
+                </h2>
+            </article>
+
             <article class="prose">
                 {{ .Content }}
             </article>
