@@ -1,12 +1,12 @@
 +++
-title = "Bachelor Thesis"
+title = "Bachelor's Thesis"
 date = 2022-07-02
 author = "Tjark Sievers"
 categories = ["Project Showcases"]
 tags = ["Thesis", "Computational Physics", "DFT"]
 +++
 
-In summary, my bachelor project was about a software package used in the research group and how to best run it on our local compute cluster.
+My bachelor project was about a software package used in the research group and how to best run it on our local compute cluster.
 
 When I started my bachelor project, the group of Professor Wehling was starting pretty fresh at the university.
 The project we ended up on was to look at [Quantum Espresso](https://www.quantum-espresso.org/), evaluating how it runs best on our local compute cluster
