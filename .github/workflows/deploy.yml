@@ -36,4 +36,5 @@ jobs:
         MONGODB_SITEUSERADMIN: ${{ secrets.MONGODB_SITEUSERADMIN }}
         MONGODB_BACKUP: ${{ secrets.MONGODB_BACKUP }}
         MONGODB_API_USER: ${{ secrets.MONGODB_API_USER }}
+        MONGODB_URI: ${{ secrets.MONGODB_URI }}
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
