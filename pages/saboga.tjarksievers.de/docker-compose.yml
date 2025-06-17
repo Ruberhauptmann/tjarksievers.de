@@ -24,7 +24,7 @@ services:
       - "traefik.http.routers.saboga-api.middlewares=strip-api-prefix"
       - "traefik.http.middlewares.strip-api-prefix.stripPrefix.prefixes=/api"
     environment:
-      MONGODB_API_USER: ${MONGODB_API_USER}
+      MONGODB_URI: ${MONGODB_URI}
     volumes:
       - saboga_api_static:/static
       - saboga_api_img:/img
