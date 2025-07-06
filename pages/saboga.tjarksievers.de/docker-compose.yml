@@ -15,7 +15,7 @@ services:
       - saboga-api
 
   saboga-api:
-    image: ghcr.io/ruberhauptmann/saboga-api:0.0.41
+    image: ghcr.io/ruberhauptmann/saboga-api:0.0.42
     container_name: saboga-api
     labels:
       - "traefik.http.routers.saboga-api.rule=Host(`saboga.tjarksievers.de`) && PathPrefix(`/api`)"
@@ -25,6 +25,8 @@ services:
       - "traefik.http.middlewares.strip-api-prefix.stripPrefix.prefixes=/api"
     environment:
       MONGODB_URI: ${MONGODB_URI}
+      BGG_USERNAME: ${BGG_USERNAME}
+      BGG_PASSWORD: ${BGG_PASSWORD}
     volumes:
       - saboga_api_static:/static
       - saboga_api_img:/img
