@@ -37,4 +37,6 @@ jobs:
         MONGODB_BACKUP: ${{ secrets.MONGODB_BACKUP }}
         MONGODB_API_USER: ${{ secrets.MONGODB_API_USER }}
         MONGODB_URI: ${{ secrets.MONGODB_URI }}
+        BGG_USERNAME: ${{ secrets.BGG_USERNAME }}
+        BGG_PASSWORD: ${{ secrets.BGG_PASSWORD }}
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
