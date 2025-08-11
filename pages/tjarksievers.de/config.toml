@@ -16,16 +16,12 @@ copyright = "Copyright © 2025, Tjark Sievers, all rights reserved."
   profile = "profile.webp"
   hero = "sunset.webp"
   abstract = """
-    I'm a Physics master student currently working on my master thesis, a joint project
-    between Prof. Tim Wehling at Universität Hamburg and Prof. Annica Black-Schaffer at Uppsala University.
-    My research interest is the theory of superconductivity in strongly correlated electron systems.
+    Physicist turned developer. Currently working as a software engineer at altona diagnostics.
     """
   bgg_username = "ourkindofart"
   bgg_title = "Last boardgames played"
   impressum = "impressum"
 
-#[Params.social.orcid]
-#  link = "https://orcid.org/0000-0002-4365-7729"
 [Params.social.email]
   link = "tsievers@physnet.uni-hamburg.de"
 [Params.social.github]
