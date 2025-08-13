@@ -23,21 +23,22 @@ copyright = "Copyright © 2025, Tjark Sievers, all rights reserved."
   impressum = "impressum"
 
 [Params.social.email]
-  link = "tsievers@physnet.uni-hamburg.de"
+  link = "tjarksievers@icloud.com"
 [Params.social.github]
   link = "https://github.com/Ruberhauptmann"
+[Params.social.bgg]
+  link = "https://boardgamegeek.com/user/ourkindofart"
 [Params.social.gpg]
   link = "/gpg.txt"
 
 [Params.cv]
   url = "/cv/"
-  download = "https://raw.githubusercontent.com/Ruberhauptmann/cv/main/TjarkSieversAcademicCV_en.pdf"
+  download = "https://raw.githubusercontent.com/Ruberhauptmann/cv/main/TjarkSieversShortCV_en.pdf"
   general = true
   education = true
-  schools_conferences = true
   work_experience = true
-  #publications = true
   technical_skills = true
+  projects = true
 
 [taxonomies]
   category = "categories"
@@ -48,10 +49,6 @@ copyright = "Copyright © 2025, Tjark Sievers, all rights reserved."
   date = ['date_finished', ':default']
 
 [menu]
-#[[menu.main]]
-#  name = "Publications"
-#  url = "/publications"
-#  weight = -130
 [[menu.main]]
   name = "CV"
   url = "/cv"
@@ -60,10 +57,10 @@ copyright = "Copyright © 2025, Tjark Sievers, all rights reserved."
   name = "Projects"
   url = "/categories/project-showcases"
   weight = -110
-[[menu.main]]
-  name = "Lecture Notes"
-  url = "/lecture-notes"
-  weight = -100
+#[[menu.main]]
+#  name = "Lecture Notes"
+#  url = "/lecture-notes"
+#  weight = -100
 [[menu.main]]
   name = "About"
   url = "/about"
