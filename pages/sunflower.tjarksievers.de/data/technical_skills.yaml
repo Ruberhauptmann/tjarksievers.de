@@ -1,43 +1,6 @@
 en:
-  languages:
-    Fortran:
-      name: Fortran
-      projects:
-        BCS_Theory_Simulations:
-          name: BCS Theory Simulations
-          description: Developed simulation programs in Fortran to model electron pairing in superconductors, fundamental to the BCS theory.
-          link: example.com/projects/bcs-theory-simulations
-        Quantum_Statistical_Models:
-          name: Quantum Statistical Models
-          description: Wrote Fortran code to analyze quantum statistical systems, contributing to research in condensed matter physics.
-          link: example.com/projects/quantum-statistical-models
-    Assembly:
-      name: Assembly Language
-      projects:
-        Early_Computer_Models:
-          name: Early Computer Models
-          description: Utilized assembly language to program early computer models for physics simulations and data analysis.
-          link: example.com/projects/early-computer-models
-  web:
-    HTML:
-      name: HTML
-      projects:
-        Cooper_Research_Archive:
-          name: Cooper Research Archive
-          description: Created an early HTML-based archive for sharing research papers and academic resources with students and colleagues.
-          link: example.com/projects/cooper-research-archive
-  technologies:
-    Mainframe_Computing:
-      name: Mainframe Computing
-      projects:
-        Superconductivity_Research:
-          name: Superconductivity Research
-          description: Leveraged mainframe computing resources to perform complex calculations and simulations related to superconductivity.
-          link: example.com/projects/superconductivity-research
-    Quantum_Computing:
-      name: Quantum Computing
-      projects:
-        Quantum_Algorithms:
-          name: Quantum Algorithms
-          description: Explored theoretical quantum algorithms that could extend the principles of the BCS theory to quantum computing.
-          link: example.com/projects/quantum-algorithms
+  Languages:
+    - Assembly
+    - Fortran
+  Web Development:
+    - HTML

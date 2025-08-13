@@ -1,0 +1,32 @@
+en:
+  BCS_Theory_Simulations:
+    name: BCS Theory Simulations
+    notes:
+      - Developed simulation programs in Fortran to model electron pairing in superconductors, fundamental to the BCS theory.
+    link: example.com/projects/bcs-theory-simulations
+    technologies:
+      - Fortran
+      - Mainframe Computing
+  Quantum_Statistical_Models:
+    name: Quantum Statistical Models
+    notes:
+      - Wrote Fortran code to analyze quantum statistical systems, contributing to research in condensed matter physics.
+    link: example.com/projects/quantum-statistical-models
+    technologies:
+      - Fortran
+      - Mainframe Computing
+  Early_Computer_Models:
+    name: Early Computer Models
+    notes:
+      - Utilized assembly language to program early computer models for physics simulations and data analysis.
+    link: example.com/projects/early-computer-models
+    technologies:
+      - Assembly
+      - Mainframe Computing
+  Mainframe_Computing:
+    name: Superconductivity Research
+    notes:
+      - Leveraged mainframe computing resources to perform complex calculations and simulations related to superconductivity.
+    link: example.com/projects/superconductivity-research
+    technologies:
+      - Mainframe Computing

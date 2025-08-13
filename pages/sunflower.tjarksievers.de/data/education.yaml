@@ -5,7 +5,8 @@ en:
       institution: Columbia University
       location: New York, NY
       date: 1954-01-01
-      notes: "Doctoral dissertation under the supervision of Robert Serber"
+      notes: ["Doctoral dissertation under the supervision of Robert Serber"]
+      grade: "Summa cum laude"
     master:
       name: M.A. in Physics
       institution: Columbia University
