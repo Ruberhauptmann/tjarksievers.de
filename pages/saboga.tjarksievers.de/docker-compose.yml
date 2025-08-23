@@ -1,6 +1,6 @@
 services:
   saboga-frontend:
-    image: ghcr.io/ruberhauptmann/saboga-frontend:0.0.7
+    image: ghcr.io/ruberhauptmann/saboga-frontend:0.0.8
     container_name: saboga-frontend
     labels:
       - "traefik.http.routers.saboga-frontend.rule=Host(`saboga.tjarksievers.de`)"
@@ -15,7 +15,7 @@ services:
       - saboga-api
 
   saboga-api:
-    image: ghcr.io/ruberhauptmann/saboga-api:0.0.46
+    image: ghcr.io/ruberhauptmann/saboga-api:0.0.47
     container_name: saboga-api
     labels:
       - "traefik.http.routers.saboga-api.rule=Host(`saboga.tjarksievers.de`) && PathPrefix(`/api`)"
