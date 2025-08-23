@@ -11,7 +11,6 @@ RUN apt-get -y install /src/hugo_extended_0.135.0_linux-amd64.deb
 COPY assets /src/assets/
 COPY content/ /src/content/
 COPY data/ /src/data/
-COPY layouts/ /src/layouts/
 COPY themes/ /src/themes/
 COPY config.toml /src/
 
