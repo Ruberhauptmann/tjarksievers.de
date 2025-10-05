@@ -52,18 +52,6 @@ services:
     networks:
       - saboga-api
 
-  saboga-database-backup:
-    image: stefanprodan/mgob
-    container_name: saboga-mgob
-    restart: always
-    volumes:
-      - /mgob/config:/config
-      - /mgob/storage:/storage
-      - /mgob/tmp:/tmp
-      - /mgob/data:/data
-    networks:
-      - saboga-api
-
 volumes:
   saboga_db_data:
   saboga_api_static:
