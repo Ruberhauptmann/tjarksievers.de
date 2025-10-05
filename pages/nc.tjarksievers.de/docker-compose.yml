@@ -39,6 +39,7 @@ services:
       - "traefik.http.middlewares.compress.compress=true"
     networks:
       - reverse-proxy
+      - nextcloud-internal
 
 volumes:
   db_data:
