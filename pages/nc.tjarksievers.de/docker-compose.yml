@@ -26,7 +26,7 @@ services:
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
       - MYSQL_PASSWORD=${NC_MYSQL_PASSWORD}
-      - MYSQL_HOST=db
+      - MYSQL_HOST=nextcloud-db
       - NEXTCLOUD_TRUSTED_DOMAINS=nc.tjarksievers.de
     volumes:
       - nextcloud_data:/var/www/html
