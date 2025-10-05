@@ -10,5 +10,7 @@ files=(
 COMPOSE_FILE=$( IFS=:; printf '%s' "${files[*]}" )
 export COMPOSE_FILE
 
+ls
+
 docker --context=production compose stop
 docker --context=production compose up -d --build
