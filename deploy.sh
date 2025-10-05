@@ -10,7 +10,15 @@ files=(
 COMPOSE_FILE=$( IFS=:; printf '%s' "${files[*]}" )
 export COMPOSE_FILE
 
-docker --context=production compose config
+REMOTE_USER="deploy"
+REMOTE_HOST="tjarksievers.de"
 
+echo "Copying Traefik config files to remote..."
+scp traefik.yml dynamic.yml "$REMOTE_USER@$REMOTE_HOST:/tmp/"
+
+echo "Stopping old containers..."
 docker --context=production compose stop
+
+echo "Deploying..."
 docker --context=production compose up -d --build
+

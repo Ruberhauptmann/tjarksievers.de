@@ -9,19 +9,10 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - acme-data:/acme.json
-    configs:
-      - source: traefik_config
-        target: /etc/traefik/traefik.yml
-      - source: dynamic_config
-        target: /etc/traefik/dynamic.yml
+      - /tmp/traefik.yml:/etc/traefik/traefik.yml:ro
+      - /tmp/dynamic.yml:/etc/traefik/dynamic.yml:ro
     networks:
       - reverse-proxy
-
-configs:
-  traefik_config:
-    file: ./traefik.yml
-  dynamic_config:
-    file: ./dynamic.yml
 
 volumes:
   acme-data:
