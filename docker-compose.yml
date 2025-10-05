@@ -13,7 +13,6 @@ services:
       - /tmp/dynamic.yml:/etc/traefik/dynamic.yml:ro
     networks:
       - reverse-proxy
-      - nextcloud-aio
 
 volumes:
   acme-data:
@@ -21,5 +20,3 @@ volumes:
 networks:
   reverse-proxy:
     driver: bridge
-  nextcloud-aio:
-    external: true
