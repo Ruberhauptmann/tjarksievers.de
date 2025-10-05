@@ -23,6 +23,7 @@ http:
       loadBalancer:
         servers:
           - url: "http://nextcloud-aio-mastercontainer:11000"
+        passHostHeader: true
 
   middlewares:
     auth:
