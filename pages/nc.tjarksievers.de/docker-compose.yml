@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  db:
+  nextcloud-db:
     image: mariadb:11
     container_name: nextcloud-db
     restart: always
@@ -13,6 +13,8 @@ services:
       - MYSQL_PASSWORD=${NC_MYSQL_PASSWORD}
     volumes:
       - db_data:/var/lib/mysql
+    networks:
+      - nextcloud-internal
 
   nextcloud:
     image: nextcloud:29-apache
@@ -37,8 +39,12 @@ services:
       - "traefik.http.middlewares.compress.compress=true"
     networks:
       - reverse-proxy
-      - default
 
 volumes:
   db_data:
   nextcloud_data:
+
+networks:
+  nextcloud-internal:
+    driver: bridge
+    internal: true
