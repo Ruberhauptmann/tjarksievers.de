@@ -17,7 +17,3 @@ services:
 
 volumes:
   nextcloud_aio_mastercontainer:
-
-networks:
-  reverse-proxy:
-    external: true
