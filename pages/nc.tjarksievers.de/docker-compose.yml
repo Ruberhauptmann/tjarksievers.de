@@ -21,7 +21,7 @@ services:
     container_name: nextcloud
     restart: always
     depends_on:
-      - db
+      - nextcloud-db
     environment:
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
