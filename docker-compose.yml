@@ -2,33 +2,29 @@ services:
   reverse-proxy:
     image: traefik:v3.0
     container_name: reverse-proxy
-    command:
-      - "--api.dashboard=true"
-      - "--providers.docker"
-      - "--providers.docker.network=tjarksieversde_reverse-proxy"
-      - "--entrypoints.web.address=:80"
-      - "--entrypoints.websecure.address=:443"
-      - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
-      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
-      - "--certificatesresolvers.certresolver.acme.email=tjarksievers@icloud.com"
-      - "--certificatesresolvers.certresolver.acme.storage=acme.json"
-      - "--certificatesresolvers.certresolver.acme.httpchallenge.entrypoint=web"
-      - "--certificatesresolvers.certresolver.acme.tlschallenge=true"
-    labels:
-      - "traefik.http.routers.dashboard.rule=Host(`traefik.tjarksievers.de`)"
-      - "traefik.http.routers.dashboard.service=api@internal"
-      - "traefik.http.routers.dashboard.middlewares=auth"
-      - "traefik.http.middlewares.auth.basicauth.users=tjark:$$2y$$05$$jPwGv8D/GmohOqXvHAT43On2jdW3ToA1QD45jIjj4wB/RTJD2ZWHe"
-      - "traefik.http.routers.dashboard.tls=true"
-      - "traefik.http.routers.dashboard.tls.certresolver=certresolver"
     ports:
       - "80:80"
       - "443:443"
     restart: always
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - acme-data:/acme.json
+    configs:
+      - source: traefik_config
+        target: /etc/traefik/traefik.yml
+      - source: dynamic_config
+        target: /etc/traefik/dynamic.yml
     networks:
       - reverse-proxy
+
+configs:
+  traefik_config:
+    file: ./traefik.yml
+  dynamic_config:
+    file: ./dynamic.yml
+
+volumes:
+  acme-data:
 
 networks:
   reverse-proxy:
