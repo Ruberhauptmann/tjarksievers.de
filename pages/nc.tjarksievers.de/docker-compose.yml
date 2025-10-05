@@ -1,21 +1,44 @@
-version: "3.9"
+version: "3.8"
 
 services:
-  nextcloud-aio-mastercontainer:
-    image: ghcr.io/nextcloud-releases/all-in-one:latest
-    container_name: nextcloud-aio-mastercontainer
+  db:
+    image: mariadb:11
+    container_name: nextcloud-db
     restart: always
-    init: true
+    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
     environment:
-      APACHE_PORT: 11000
-      APACHE_IP_BINDING: 0.0.0.0
-      APACHE_ADDITIONAL_NETWORK: reverse-proxy
+      - MYSQL_ROOT_PASSWORD=${NC_MYSQL_ROOT_PASSWORD:}
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=${NC_MYSQL_PASSWORD:}
     volumes:
-      - nextcloud_aio_mastercontainer:/mnt/docker-aio-config
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - db_data:/var/lib/mysql
+
+  nextcloud:
+    image: nextcloud:29-apache
+    container_name: nextcloud
+    restart: always
+    depends_on:
+      - db
+    environment:
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=${NC_MYSQL_PASSWORD:}
+      - MYSQL_HOST=db
+      - NEXTCLOUD_TRUSTED_DOMAINS=nc.tjarksievers.de
+    volumes:
+      - nextcloud_data:/var/www/html
+    labels:
+      - "traefik.http.routers.nextcloud.rule=Host(`nc.tjarksievers.de`)"
+      - "traefik.http.routers.nextcloud.tls=true"
+      - "traefik.http.routers.nextcloud.tls.certresolver=certresolver"
+      - "traefik.http.services.nextcloud.loadbalancer.server.port=80"
+      - "traefik.http.routers.nextcloud.middlewares=compress"
+      - "traefik.http.middlewares.compress.compress=true"
     networks:
       - reverse-proxy
+      - default
 
 volumes:
-  nextcloud_aio_mastercontainer:
-    name: nextcloud_aio_mastercontainer
+  db_data:
+  nextcloud_data:
