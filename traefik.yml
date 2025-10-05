@@ -26,7 +26,6 @@ certificatesResolvers:
   certresolver:
     acme:
       email: tjarksievers@icloud.com
-      storage: acme.json
+      storage: /acme.json
       httpChallenge:
         entryPoint: web
-      tlsChallenge: true
