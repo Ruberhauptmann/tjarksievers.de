@@ -9,7 +9,6 @@ http:
         - "auth"
       tls:
         certResolver: "certresolver"
-
     nextcloud:
       rule: "Host(`nc.tjarksievers.de`)"
       entryPoints:
@@ -19,7 +18,6 @@ http:
         - nextcloud-chain
       tls:
         certResolver: "certresolver"
-
   services:
     nextcloud:
       loadBalancer:
@@ -30,18 +28,15 @@ http:
     auth:
       basicAuth:
         users:
-          - "tjark:$$2y$$05$$jPwGv8D/GmohOqXvHAT43On2jdW3ToA1QD45jIjj4wB/RTJD2ZWHe"
-
+          - "tjark:$2y$05$jPwGv8D/GmohOqXvHAT43On2jdW3ToA1QD45jIjj4wB/RTJD2ZWHe"
     nextcloud-secure-headers:
       headers:
         hostsProxyHeaders:
           - "X-Forwarded-Host"
         referrerPolicy: "same-origin"
-
     https-redirect:
       redirectScheme:
         scheme: https
-
     nextcloud-chain:
       chain:
         middlewares:
