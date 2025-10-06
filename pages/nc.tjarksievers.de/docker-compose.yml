@@ -28,6 +28,11 @@ services:
       - MYSQL_PASSWORD=${NC_MYSQL_PASSWORD}
       - MYSQL_HOST=nextcloud-db
       - NEXTCLOUD_TRUSTED_DOMAINS=nc.tjarksievers.de
+      - TRUSTED_PROXIES=172.18.0.0/16
+      - APACHE_DISABLE_REWRITE_IP=1
+      - OVERWRITEHOST=nc.tjarksievers.de
+      - OVERWRITEPROTOCOL=https
+      - OVERWRITECLIURL=https://nc.tjarksievers.de
     volumes:
       - nextcloud_data:/var/www/html
     labels:
