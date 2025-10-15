@@ -15,7 +15,7 @@ services:
       - saboga-api
 
   saboga-api:
-    image: ghcr.io/ruberhauptmann/saboga-api:0.0.52
+    image: ghcr.io/ruberhauptmann/saboga-api:0.0.54
     container_name: saboga-api
     labels:
       - "traefik.http.routers.saboga-api.rule=Host(`saboga.tjarksievers.de`) && PathPrefix(`/api`)"
@@ -24,7 +24,7 @@ services:
       - "traefik.http.routers.saboga-api.middlewares=strip-api-prefix"
       - "traefik.http.middlewares.strip-api-prefix.stripPrefix.prefixes=/api"
     environment:
-      MONGODB_URI: ${MONGODB_URI}
+      POSTGRES_URI: ${POSTGRES_URI}
       BGG_USERNAME: ${BGG_USERNAME}
       BGG_PASSWORD: ${BGG_PASSWORD}
     volumes:
@@ -41,14 +41,15 @@ services:
       - loki
 
   saboga-database:
-    image: mongo:8.0-noble
+    image: postgres:17
     container_name: saboga-database
+    env_file:
+      - .env
     volumes:
-      - saboga_db_data:/data/db
+      - saboga_db_data:/var/lib/postgresql/data
     environment:
-      MONGO_INITDB_ROOT_USERNAME: siteUserAdmin
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_SITEUSERADMIN}
-    restart: always
+      POSTGRES_DB: saboga
+      POSTGRES_PASSWORD: ${POSTGRES_ADMIN}
     networks:
       - saboga-api
 

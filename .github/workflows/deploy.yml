@@ -35,10 +35,8 @@ jobs:
       env:
         NC_MYSQL_PASSWORD: ${{ secrets.NC_MYSQL_PASSWORD }}
         NC_MYSQL_ROOT_PASSWORD: ${{ secrets.NC_MYSQL_ROOT_PASSWORD }}
-        MONGODB_SITEUSERADMIN: ${{ secrets.MONGODB_SITEUSERADMIN }}
-        MONGODB_BACKUP: ${{ secrets.MONGODB_BACKUP }}
-        MONGODB_API_USER: ${{ secrets.MONGODB_API_USER }}
-        MONGODB_URI: ${{ secrets.MONGODB_URI }}
+        POSTGRES_URI: ${{ secrets.POSTGRES_URI }}
+        POSTGRES_ADMIN: ${{ secrets.POSTGRES_ADMIN }}
         BGG_USERNAME: ${{ secrets.BGG_USERNAME }}
         BGG_PASSWORD: ${{ secrets.BGG_PASSWORD }}
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
