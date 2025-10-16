@@ -28,8 +28,8 @@ services:
       BGG_USERNAME: ${BGG_USERNAME}
       BGG_PASSWORD: ${BGG_PASSWORD}
     volumes:
-      - saboga_api_static:/static
-      - saboga_api_img:/img
+      - saboga_api_static:/app/static
+      - saboga_api_img:/app/img
     restart: always
     expose:
       - "8000"
