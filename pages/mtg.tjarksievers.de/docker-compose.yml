@@ -1,0 +1,16 @@
+services:
+  tjarksievers-de:
+    build: pages/mtg.tjarksievers.de
+    container_name: mtg-tjarksievers-de
+    labels:
+      - "traefik.http.routers.mtg-tjarksievers-de.rule=Host(`mtg.tjarksievers.de`)"
+      - "traefik.http.routers.mtg-tjarksievers-de.tls=true"
+      - "traefik.http.routers.mtg-tjarksievers-de.tls.certresolver=certresolver"
+      - "traefik.http.routers.mtg-tjarksievers-de.middlewares=compress, cache-header"
+      - "traefik.http.middlewares.compress.compress=true"
+      - "traefik.http.middlewares.cache-header.headers.customresponseheaders.Cache-Control=max-age=31536000"
+    restart: always
+    networks:
+      - reverse-proxy
+    depends_on:
+      - reverse-proxy
