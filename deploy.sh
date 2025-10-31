@@ -17,5 +17,5 @@ docker --context=production compose stop
 echo "Deploying..."
 docker --context=production compose up -d --build
 
-docker --context=production cp /home/tjark/mtg-timeline-game mtg-tjarksievers-de:/usr/share/nginx/html/
+ssh deploy@tjarksievers.de "docker --context=production cp /srv/mtg-timeline-game/src/ mtg-tjarksievers-de:/usr/share/nginx/html/"
 
