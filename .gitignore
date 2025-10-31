@@ -4,5 +4,4 @@
 
 *.lock
 
-**/*.pck
-**/*.wasm
+pages/mtg.tjarksievers.de/src/
