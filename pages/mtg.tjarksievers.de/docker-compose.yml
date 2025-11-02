@@ -1,5 +1,5 @@
 services:
-  tjarksievers-de:
+  mtg-tjarksievers-de:
     build: pages/mtg.tjarksievers.de
     container_name: mtg-tjarksievers-de
     labels:
