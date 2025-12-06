@@ -25,6 +25,6 @@ services:
 
 
 volumes:
-  jellyfin_configs:
+  jellyfin_config:
   jellyfin_cache:
   jellyfin_media:
