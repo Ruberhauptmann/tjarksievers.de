@@ -6,6 +6,7 @@ files=(
   pages/monitoring.tjarksievers.de/docker-compose.yml
   pages/nc.tjarksievers.de/docker-compose.yml
   pages/mtg.tjarksievers.de/docker-compose.yml
+  pages/jellyfin.tjarksievers.de/docker-compose.yml
 )
 
 COMPOSE_FILE=$( IFS=:; printf '%s' "${files[*]}" )
