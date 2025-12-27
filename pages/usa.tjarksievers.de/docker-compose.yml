@@ -11,7 +11,7 @@ services:
       - "traefik.http.middlewares.compress.compress=true"
       - "traefik.http.middlewares.cache-header.headers.customresponseheaders.Cache-Control=max-age=31536000"
     environment:
-      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_HOST: usa-tjarksievers-db
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
       WORDPRESS_DB_NAME: wordpress-db
@@ -32,6 +32,13 @@ services:
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - usa-tjarksievers-db:/var/lib/mysql
+    networks:
+      - wordpress-internal
+
+networks:
+  wordpress-internal:
+    driver: bridge
+    internal: true
 
 volumes:
   wordpress:
