@@ -39,4 +39,5 @@ jobs:
         POSTGRES_ADMIN: ${{ secrets.POSTGRES_ADMIN }}
         BGG_USERNAME: ${{ secrets.BGG_USERNAME }}
         BGG_PASSWORD: ${{ secrets.BGG_PASSWORD }}
+        WORDPRESS_DB_PASSWORD: ${{ secrets.WORDPRESS_DB_PASSWORD }}
         SSH_AUTH_SOCK: /tmp/ssh_agent.sock
