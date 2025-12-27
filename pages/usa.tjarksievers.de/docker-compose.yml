@@ -19,12 +19,14 @@ services:
       - wordpress:/var/www/html
     networks:
       - reverse-proxy
+      - wordpress-internal
     depends_on:
       - reverse-proxy
 
   usa-tjarksievers-db:
     image: mysql:8.0
     restart: always
+    container_name: usa-tjarksievers-db
     environment:
       MYSQL_DATABASE: wordpress-db
       MYSQL_USER: wordpress
