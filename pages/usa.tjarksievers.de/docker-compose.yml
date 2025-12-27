@@ -4,10 +4,10 @@ services:
     restart: always
     container_name: usa-tjarksievers-de
     labels:
-      - "traefik.http.routers.tjarksievers-de.rule=Host(`usa.tjarksievers.de`)"
-      - "traefik.http.routers.tjarksievers-de.tls=true"
-      - "traefik.http.routers.tjarksievers-de.tls.certresolver=certresolver"
-      - "traefik.http.routers.tjarksievers-de.middlewares=compress, cache-header"
+      - "traefik.http.routers.usa-tjarksievers-de.rule=Host(`usa.tjarksievers.de`)"
+      - "traefik.http.routers.usa-tjarksievers-de.tls=true"
+      - "traefik.http.routers.usa-tjarksievers-de.tls.certresolver=certresolver"
+      - "traefik.http.routers.usa-tjarksievers-de.middlewares=compress, cache-header"
       - "traefik.http.middlewares.compress.compress=true"
       - "traefik.http.middlewares.cache-header.headers.customresponseheaders.Cache-Control=max-age=31536000"
     environment:
