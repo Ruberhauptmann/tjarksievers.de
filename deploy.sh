@@ -13,11 +13,14 @@ files=(
 COMPOSE_FILE=$( IFS=:; printf '%s' "${files[*]}" )
 export COMPOSE_FILE
 
+echo "Building images..."
+docker --context=production compose build
+
 echo "Stopping old containers..."
 docker --context=production compose stop
 
 echo "Deploying..."
-docker --context=production compose up -d --build
+docker --context=production compose up -d
 
 echo "Migrating database..."
 docker --context=production compose run --rm saboga-manage uv run python manage.py migrate

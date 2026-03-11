@@ -45,8 +45,6 @@ services:
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_ADMIN}
     restart: always
-    depends_on:
-      - reverse-proxy
     networks:
       - saboga-api
     profiles:
