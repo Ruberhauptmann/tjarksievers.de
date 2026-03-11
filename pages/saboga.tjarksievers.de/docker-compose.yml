@@ -15,7 +15,7 @@ services:
       - saboga-api
 
   saboga-api:
-    image: ghcr.io/ruberhauptmann/saboga-api:0.1.3
+    image: ghcr.io/ruberhauptmann/saboga-api:0.1.4
     container_name: saboga-api
     labels:
       - "traefik.http.routers.saboga-api.rule=Host(`saboga.tjarksievers.de`) && PathPrefix(`/api`)"
@@ -24,7 +24,7 @@ services:
       - "traefik.http.routers.saboga-api.middlewares=strip-api-prefix"
       - "traefik.http.middlewares.strip-api-prefix.stripPrefix.prefixes=/api"
     environment:
-      POSTGRES_URI: ${POSTGRES_URI}
+      POSTGRES_PASSWORD: ${POSTGRES_ADMIN}
       BGG_USERNAME: ${BGG_USERNAME}
       BGG_PASSWORD: ${BGG_PASSWORD}
     volumes:
