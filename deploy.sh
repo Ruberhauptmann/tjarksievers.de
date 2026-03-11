@@ -23,4 +23,4 @@ echo "Deploying..."
 docker --context=production compose up -d
 
 echo "Migrating database..."
-docker --context=production compose run --rm saboga-manage uv run python manage.py migrate
+docker --context=production compose run --rm saboga-manage python manage.py migrate
