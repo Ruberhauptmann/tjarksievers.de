@@ -39,6 +39,19 @@ services:
       - saboga-api
       - loki
 
+  saboga-manage:
+    image: ghcr.io/ruberhauptmann/saboga-api:0.1.5
+    container_name: saboga-manage
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_ADMIN}
+    restart: always
+    depends_on:
+      - reverse-proxy
+    networks:
+      - saboga-api
+    profiles:
+      - manage
+
   saboga-database:
     image: postgres:17
     container_name: saboga-database
