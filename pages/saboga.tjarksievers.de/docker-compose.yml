@@ -55,7 +55,7 @@ services:
       - staticfiles:/usr/share/nginx/html/static:ro
       - img:/usr/share/nginx/html/img:ro
     networks:
-      - saboga-reverse-proxy
+      - reverse-proxy
 
   saboga-manage:
     image: ghcr.io/ruberhauptmann/saboga-api:0.1.6
