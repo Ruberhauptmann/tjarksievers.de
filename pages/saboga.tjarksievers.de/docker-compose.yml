@@ -46,9 +46,9 @@ services:
     build: .
     container_name: saboga-static
     labels:
-      - "traefik.http.routers.saboga-static.rule=Host(`saboga.localhost`) && PathPrefix(`/api/static`)"
+      - "traefik.http.routers.saboga-static.rule=Host(`saboga.tjarksievers.de`) && PathPrefix(`/api/static`)"
       - "traefik.http.routers.saboga-static.tls=true"
-      - "traefik.http.routers.saboga-img.rule=Host(`saboga.localhost`) && PathPrefix(`/api/img`)"
+      - "traefik.http.routers.saboga-img.rule=Host(`saboga.tjarksievers.de`) && PathPrefix(`/api/img`)"
       - "traefik.http.routers.saboga-img.tls=true"
       - "traefik.docker.network=saboga-reverse-proxy"
     volumes:
