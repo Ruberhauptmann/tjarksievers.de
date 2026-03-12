@@ -15,7 +15,7 @@ services:
       - saboga-api
 
   saboga-api:
-    image: ghcr.io/ruberhauptmann/saboga-api:0.1.5
+    image: ghcr.io/ruberhauptmann/saboga-api:0.1.6
     container_name: saboga-api
     labels:
       - "traefik.http.routers.saboga-api.rule=Host(`saboga.tjarksievers.de`) && PathPrefix(`/api`)"
@@ -27,6 +27,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_ADMIN}
       BGG_USERNAME: ${BGG_USERNAME}
       BGG_PASSWORD: ${BGG_PASSWORD}
+      BGG_API_KEY: ${BGG_API_KEY}
     volumes:
       - saboga_api_img:/app/img
     restart: always
@@ -39,8 +40,25 @@ services:
       - saboga-api
       - loki
 
+  # static file server using nginx
+  static-server:
+    image: nginx:alpine
+    build: .
+    container_name: saboga-static
+    labels:
+      - "traefik.http.routers.saboga-static.rule=Host(`saboga.localhost`) && PathPrefix(`/api/static`)"
+      - "traefik.http.routers.saboga-static.tls=true"
+      - "traefik.http.routers.saboga-img.rule=Host(`saboga.localhost`) && PathPrefix(`/api/img`)"
+      - "traefik.http.routers.saboga-img.tls=true"
+      - "traefik.docker.network=saboga-reverse-proxy"
+    volumes:
+      - staticfiles:/usr/share/nginx/html/static:ro
+      - img:/usr/share/nginx/html/img:ro
+    networks:
+      - saboga-reverse-proxy
+
   saboga-manage:
-    image: ghcr.io/ruberhauptmann/saboga-api:0.1.5
+    image: ghcr.io/ruberhauptmann/saboga-api:0.1.6
     container_name: saboga-manage
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_ADMIN}
