@@ -82,6 +82,7 @@ services:
 volumes:
   saboga_db_data:
   saboga_api_img:
+  staticfiles:
 
 networks:
   saboga-api:
