@@ -53,7 +53,7 @@ services:
       - "traefik.docker.network=saboga-reverse-proxy"
     volumes:
       - staticfiles:/usr/share/nginx/html/static:ro
-      - saboga-api-img:/usr/share/nginx/html/img:ro
+      - saboga_api_img:/usr/share/nginx/html/img:ro
     networks:
       - reverse-proxy
 
