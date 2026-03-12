@@ -42,8 +42,7 @@ services:
 
   # static file server using nginx
   static-server:
-    image: nginx:alpine
-    build: .
+    build: pages/saboga.tjarksievers.de
     container_name: saboga-static
     labels:
       - "traefik.http.routers.saboga-static.rule=Host(`saboga.tjarksievers.de`) && PathPrefix(`/api/static`)"
