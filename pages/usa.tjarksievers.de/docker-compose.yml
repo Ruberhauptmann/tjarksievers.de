@@ -1,6 +1,6 @@
 services:
   usa-tjarksievers-de:
-    image: wordpress:php8.5-fpm
+    image: wordpress:php8.5-apache
     restart: always
     container_name: usa-tjarksievers-de
     labels:
